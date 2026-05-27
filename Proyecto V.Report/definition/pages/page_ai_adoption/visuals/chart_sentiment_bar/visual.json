@@ -59,52 +59,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filters": [
-    {
-      "name": "filter_blank_aisent",
-      "type": "Advanced",
-      "expression": {
-        "Column": {
-          "Expression": {
-            "SourceRef": {
-              "Entity": "survey_2025_results"
-            }
-          },
-          "Property": "AISent"
-        }
-      },
-      "filter": {
-        "Where": [
-          {
-            "Condition": {
-              "Not": {
-                "Expression": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "survey_2025_results"
-                          }
-                        },
-                        "Property": "AISent"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "null"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        ]
-      },
-      "isHiddenInViewMode": true
-    }
-  ]
+  }
 }

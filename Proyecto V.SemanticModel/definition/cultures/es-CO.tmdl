@@ -4774,7 +4774,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_aimodels.aimodel": {
+			    "dim_AI_model.AI_model": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_AIModels",
@@ -4782,7 +4782,128 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "AI model": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AIModel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "model": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "perfect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "classic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ideal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "representative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ai mockup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "ai representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "ai simulation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "mockup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
 			        {
 			          "Modelo IA": {
 			            "State": "Suggested",
@@ -4805,7 +4926,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_databases.database": {
+			    "dim_database.database": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_Databases",
@@ -4813,7 +4934,95 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "database": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "folder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "databank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "file": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "catalogue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "catalog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "store": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "archive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
 			        {
 			          "Base de datos": {
 			            "State": "Suggested",
@@ -4826,7 +5035,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_ides.ide": {
+			    "dim_ID_es.ide": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_IDEs",
@@ -4834,7 +5043,15 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "ide": {
+			            "State": "Generated"
+			          }
+			        },
 			        {
 			          "IDE / Editor": {
 			            "State": "Suggested",
@@ -4847,7 +5064,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_languages.language": {
+			    "dim_language.language": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_Languages",
@@ -4855,7 +5072,105 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "language": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "verbal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "idiom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "lingo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "dialect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "patois": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "tongue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "vernacular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "argot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "jargon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
 			        {
 			          "Lenguaje": {
 			            "State": "Suggested",
@@ -4868,7 +5183,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_platforms.platform": {
+			    "dim_platform.platform": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_Platforms",
@@ -4876,7 +5191,95 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "platform": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "podium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "policy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "proposal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "manifesto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "program": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
 			        {
 			          "Plataforma": {
 			            "State": "Suggested",
@@ -4889,7 +5292,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_devtype.devtypevalue": {
+			    "dim_dev_type.dev_type_value": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_DevType",
@@ -4897,7 +5300,122 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "dev type value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DevTypeValue": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dev category value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dev genre value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dev manner value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dev variety value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dev brand value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dev class value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dev kind value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dev style value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dev form value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dev grouping value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
 			        {
 			          "Rol": {
 			            "State": "Suggested",
@@ -4910,7 +5428,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "dim_os.os": {
+			    "dim_OS.os": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "dim_OS",
@@ -4918,7 +5436,15 @@ cultureInfo es-CO
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
+			        {
+			          "os": {
+			            "State": "Generated"
+			          }
+			        },
 			        {
 			          "Sistema Operativo": {
 			            "State": "Suggested",
@@ -4930,10 +5456,3467 @@ cultureInfo es-CO
 			          }
 			        }
 			      ]
+			    },
+			    "dim_AI_model": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_AIModels"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim AI model": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_AIModels": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "model": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "AI model": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim ai mockup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim ai representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim ai simulation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "perfect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "classic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ideal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "representative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ai mockup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "ai representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "dim_AI_model.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_AIModels",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_language": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_Languages"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim language": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_Languages": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "language": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "verbal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim idiom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dim lingo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dim dialect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dim patois": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "idiom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "lingo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "dialect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "patois": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "dim tongue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "dim_language.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_Languages",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_database": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_Databases"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim database": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_Databases": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "database": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim folder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim databank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "folder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "databank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dim file": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim catalogue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim catalog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim list": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim store": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "dim_database.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_Databases",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_platform": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_Platforms"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim platform": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_Platforms": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "platform": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim podium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim dais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "podium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dim stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim policy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dim proposal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "dim_platform.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_Platforms",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_ID_es": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_IDEs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim ID es": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_IDEs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim identification es": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim identity es": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim identifier es": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim credential es": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dim_ID_es.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_IDEs",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_dev_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_DevType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim dev type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_DevType": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim dev category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dim dev genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dim dev manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dim dev variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dim dev brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "dim dev class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "dim dev kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "dim dev style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "dim dev form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "dim dev grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dim_dev_type.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_DevType",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_OS": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_OS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dim OS": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_OS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "OS": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "dim_OS.response_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_OS",
+			          "ConceptualProperty": "ResponseId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "response id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ResponseId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "response credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "survey_2025_result_in_country": {
+			    "survey_2025_result_has_users_grok": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_grok": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_grok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_grok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_grok"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_Phi4": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_Phi4": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_Phi4"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_Phi4"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_Phi4"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_mistral": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_mistral": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_mistral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_mistral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_mistral"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_DeepSeek": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_DeepSeek": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_DeepSeek"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_DeepSeek"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_DeepSeek"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_llama": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_llama": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_llama"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_llama"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_llama"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_claude": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_claude": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_claude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_claude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_claude"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_gemini": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_gemini": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_gemini"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_gemini"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_gemini"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_users_ChatGPT": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.users_ChatGPT": {
+			          "Target": {
+			            "Entity": "survey_2025_result.users_ChatGPT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.users_ChatGPT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_users_ChatGPT"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_nonAI_users_count": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.nonAI_users_count": {
+			          "Target": {
+			            "Entity": "survey_2025_result.nonAI_users_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.nonAI_users_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_nonAI_users_count"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_users_count": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_users_count": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_users_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_users_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_users_count"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_unfavorable_sentiment": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.unfavorable_sentiment": {
+			          "Target": {
+			            "Entity": "survey_2025_result.unfavorable_sentiment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.unfavorable_sentiment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have__unfavorable_sentiment"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_distrust_AI": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.distrust_AI": {
+			          "Target": {
+			            "Entity": "survey_2025_result.distrust_AI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.distrust_AI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have__distrust_AI"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_median_salary_USD": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.median_salary_USD": {
+			          "Target": {
+			            "Entity": "survey_2025_result.median_salary_USD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.median_salary_USD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_median_salary_USD"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_trust_AI": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.trust_AI": {
+			          "Target": {
+			            "Entity": "survey_2025_result.trust_AI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.trust_AI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have__trust_AI"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_favorable_sentiment": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.favorable_sentiment": {
+			          "Target": {
+			            "Entity": "survey_2025_result.favorable_sentiment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.favorable_sentiment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have__favorable_sentiment"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_daily_AI_use": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.daily_AI_use": {
+			          "Target": {
+			            "Entity": "survey_2025_result.daily_AI_use"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.daily_AI_use"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have__daily_AI_use"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_adoption": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_adoption": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_adoption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_adoption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have__AI_adoption"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_total_respondents": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.total_respondents": {
+			          "Target": {
+			            "Entity": "survey_2025_result.total_respondents"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.total_respondents"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_total_respondents"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.region": {
+			          "Target": {
+			            "Entity": "survey_2025_result.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_regions"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_experience_range": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.experience_range": {
+			          "Target": {
+			            "Entity": "survey_2025_result.experience_range"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.experience_range"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_experience_ranges"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_job_sat": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.job_sat": {
+			          "Target": {
+			            "Entity": "survey_2025_result.job_sat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.job_sat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_job_sat"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_converted_comp_yearly": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.converted_comp_yearly": {
+			          "Target": {
+			            "Entity": "survey_2025_result.converted_comp_yearly"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.converted_comp_yearly"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_converted_comp_yearlies"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_open": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_open": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_open"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_open"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_opens"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_human": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_human": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_human"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_human"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_humans"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_agent_use": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_agent_use": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_agent_use"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_agent_use"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_agent_uses"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_agent_change": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_agent_change": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_agent_change"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_agent_change"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_agent_changes"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_agent": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_agent": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_agent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_agent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_agents"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_explain": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_explain": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_explain"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_explain"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_explain"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_frustration": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_frustration": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_frustration"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_frustration"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_frustrations"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AIToolCurrently_mostly_AI": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AIToolCurrently_mostly_AI": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AIToolCurrently_mostly_AI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AIToolCurrently_mostly_AI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AIToolCurrently_mostly_AI"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AIToolPlan_to_mostly_use_AI": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AIToolPlan_to_mostly_use_AI": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AIToolPlan_to_mostly_use_AI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AIToolPlan_to_mostly_use_AI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AIToolPlan_to_mostly_use_AI"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AIToolPlan_to_partially_use_AI": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AIToolPlan_to_partially_use_AI": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AIToolPlan_to_partially_use_AI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AIToolPlan_to_partially_use_AI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AIToolPlan_to_partially_use_AI"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AIToolDont_plan_to_use_AI_for_this_task": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AIToolDont_plan_to_use_AI_for_this_task": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AIToolDont_plan_to_use_AI_for_this_task"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AIToolDont_plan_to_use_AI_for_this_task"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AIToolDont_plan_to_use_AI_for_this_task"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AIToolCurrently_partially_AI": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AIToolCurrently_partially_AI": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AIToolCurrently_partially_AI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AIToolCurrently_partially_AI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AIToolCurrently_partially_AI"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_complex": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_complex": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_complex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_complex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_complexes"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_acc": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_acc": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_acc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_acc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_accs"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_sent": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_sent": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_sent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_sent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_sent"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_select": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_select": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_select"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_select"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_selects"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_models_want_to_work_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_models_want_to_work_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_models_want_to_work_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_models_want_to_work_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_models_want_to_work_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_AI_models_have_worked_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.AI_models_have_worked_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.AI_models_have_worked_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.AI_models_have_worked_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_AI_models_have_worked_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_OpSysProfessional_use": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.OpSysProfessional_use": {
+			          "Target": {
+			            "Entity": "survey_2025_result.OpSysProfessional_use"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.OpSysProfessional_use"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_OpSysProfessional_uses"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_OpSysPersonal_use": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.OpSysPersonal_use": {
+			          "Target": {
+			            "Entity": "survey_2025_result.OpSysPersonal_use"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.OpSysPersonal_use"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_OpSysPersonal_uses"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_dev_envs_want_to_work_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.dev_envs_want_to_work_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.dev_envs_want_to_work_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.dev_envs_want_to_work_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_dev_envs_want_to_work_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_dev_envs_have_worked_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.dev_envs_have_worked_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.dev_envs_have_worked_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.dev_envs_have_worked_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_dev_envs_have_worked_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_webframe_want_to_work_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.webframe_want_to_work_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.webframe_want_to_work_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.webframe_want_to_work_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_webframe_want_to_work_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_webframe_have_worked_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.webframe_have_worked_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.webframe_have_worked_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.webframe_have_worked_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_webframe_have_worked_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_platform_want_to_work_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.platform_want_to_work_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.platform_want_to_work_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.platform_want_to_work_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_platform_want_to_work_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_platform_have_worked_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.platform_have_worked_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.platform_have_worked_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.platform_have_worked_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_platform_have_worked_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_database_want_to_work_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.database_want_to_work_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.database_want_to_work_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.database_want_to_work_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_database_want_to_work_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_database_have_worked_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.database_have_worked_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.database_have_worked_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.database_have_worked_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_database_have_worked_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_language_want_to_work_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.language_want_to_work_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.language_want_to_work_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.language_want_to_work_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_language_want_to_work_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_language_have_worked_with": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.language_have_worked_with": {
+			          "Target": {
+			            "Entity": "survey_2025_result.language_have_worked_with"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.language_have_worked_with"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_language_have_worked_with"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_comp_total": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.comp_total": {
+			          "Target": {
+			            "Entity": "survey_2025_result.comp_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.comp_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_comp_totals"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_currency": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.currency": {
+			          "Target": {
+			            "Entity": "survey_2025_result.currency"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.currency"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_currencies"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_country": {
 			      "Binding": {
 			        "ConceptualEntity": "survey_2025_results"
 			      },
@@ -4950,31 +8933,415 @@ cultureInfo es-CO
 			          }
 			        }
 			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "survey_2025_result.country"
-			        }
-			      },
 			      "Phrasings": [
 			        {
-			          "Preposition": {
+			          "Attribute": {
 			            "Subject": {
 			              "Role": "survey_2025_result"
 			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
 			            "Object": {
 			              "Role": "survey_2025_result.country"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "survey_2025_results_are_in_countries"
+			          "ID": "survey_2025_results_have_countries"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_industry": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.industry": {
+			          "Target": {
+			            "Entity": "survey_2025_result.industry"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.industry"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_industries"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_remote_work": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.remote_work": {
+			          "Target": {
+			            "Entity": "survey_2025_result.remote_work"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.remote_work"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_remote_works"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_I_cor_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.I_cor_PM": {
+			          "Target": {
+			            "Entity": "survey_2025_result.I_cor_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.I_cor_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_I_cor_PM"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_org_size": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.org_size": {
+			          "Target": {
+			            "Entity": "survey_2025_result.org_size"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.org_size"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_org_sizes"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_dev_type": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.dev_type": {
+			          "Target": {
+			            "Entity": "survey_2025_result.dev_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.dev_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_dev_types"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_years_code": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.years_code": {
+			          "Target": {
+			            "Entity": "survey_2025_result.years_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.years_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_years_codes"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_work_exp": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.work_exp": {
+			          "Target": {
+			            "Entity": "survey_2025_result.work_exp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.work_exp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_work_exps"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_employment": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.employment": {
+			          "Target": {
+			            "Entity": "survey_2025_result.employment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.employment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_employments"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_ed_level": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.ed_level": {
+			          "Target": {
+			            "Entity": "survey_2025_result.ed_level"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.ed_level"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_ed_levels"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_age": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.age": {
+			          "Target": {
+			            "Entity": "survey_2025_result.age"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.age"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_ages"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_main_branch": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.main_branch": {
+			          "Target": {
+			            "Entity": "survey_2025_result.main_branch"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.main_branch"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_main_branches"
+			        }
+			      ]
+			    },
+			    "survey_2025_result_has_response_id": {
+			      "Binding": {
+			        "ConceptualEntity": "survey_2025_results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "survey_2025_result": {
+			          "Target": {
+			            "Entity": "survey_2025_result"
+			          }
+			        },
+			        "survey_2025_result.response_id": {
+			          "Target": {
+			            "Entity": "survey_2025_result.response_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "survey_2025_result"
+			            },
+			            "Object": {
+			              "Role": "survey_2025_result.response_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "survey_2025_results_have_response_ids"
 			        }
 			      ]
 			    },
@@ -5023,403 +9390,7 @@ cultureInfo es-CO
 			        }
 			      ]
 			    },
-			    "survey_2025_result_has_response_id": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.response_id": {
-			          "Target": {
-			            "Entity": "survey_2025_result.response_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.response_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_response_ids"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_main_branch": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.main_branch": {
-			          "Target": {
-			            "Entity": "survey_2025_result.main_branch"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.main_branch"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_main_branches"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_age": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.age": {
-			          "Target": {
-			            "Entity": "survey_2025_result.age"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.age"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_ages"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_ed_level": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.ed_level": {
-			          "Target": {
-			            "Entity": "survey_2025_result.ed_level"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.ed_level"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_ed_levels"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_employment": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.employment": {
-			          "Target": {
-			            "Entity": "survey_2025_result.employment"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.employment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_employments"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_work_exp": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.work_exp": {
-			          "Target": {
-			            "Entity": "survey_2025_result.work_exp"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.work_exp"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_work_exps"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_years_code": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.years_code": {
-			          "Target": {
-			            "Entity": "survey_2025_result.years_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.years_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_years_codes"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_dev_type": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.dev_type": {
-			          "Target": {
-			            "Entity": "survey_2025_result.dev_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.dev_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_dev_types"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_org_size": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.org_size": {
-			          "Target": {
-			            "Entity": "survey_2025_result.org_size"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.org_size"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_org_sizes"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_I_cor_PM": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.I_cor_PM": {
-			          "Target": {
-			            "Entity": "survey_2025_result.I_cor_PM"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.I_cor_PM"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_I_cor_PM"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_remote_work": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.remote_work": {
-			          "Target": {
-			            "Entity": "survey_2025_result.remote_work"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.remote_work"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_remote_works"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_industry": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.industry": {
-			          "Target": {
-			            "Entity": "survey_2025_result.industry"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.industry"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_industries"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_country": {
+			    "survey_2025_result_in_country": {
 			      "Binding": {
 			        "ConceptualEntity": "survey_2025_results"
 			      },
@@ -5436,1803 +9407,159 @@ cultureInfo es-CO
 			          }
 			        }
 			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "survey_2025_result.country"
+			        }
+			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Preposition": {
 			            "Subject": {
 			              "Role": "survey_2025_result"
 			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
 			            "Object": {
 			              "Role": "survey_2025_result.country"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_countries"
+			          "ID": "survey_2025_results_are_in_countries"
 			        }
 			      ]
 			    },
-			    "survey_2025_result_has_currency": {
+			    "dim_AI_model_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_AIModels"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_AI_model": {
+			          "Target": {
+			            "Entity": "dim_AI_model"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.currency": {
-			          "Target": {
-			            "Entity": "survey_2025_result.currency"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.currency"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_currencies"
-			        }
-			      ]
+			      }
 			    },
-			    "survey_2025_result_has_comp_total": {
+			    "dim_language_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_Languages"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_language": {
+			          "Target": {
+			            "Entity": "dim_language"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.comp_total": {
-			          "Target": {
-			            "Entity": "survey_2025_result.comp_total"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.comp_total"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_comp_totals"
-			        }
-			      ]
+			      }
 			    },
-			    "survey_2025_result_has_language_have_worked_with": {
+			    "dim_database_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_Databases"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_database": {
+			          "Target": {
+			            "Entity": "dim_database"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.language_have_worked_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.language_have_worked_with"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.language_have_worked_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_language_have_worked_with"
-			        }
-			      ]
+			      }
 			    },
-			    "survey_2025_result_has_language_want_to_work_with": {
+			    "dim_platform_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_Platforms"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_platform": {
+			          "Target": {
+			            "Entity": "dim_platform"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.language_want_to_work_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.language_want_to_work_with"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.language_want_to_work_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_language_want_to_work_with"
-			        }
-			      ]
+			      }
 			    },
-			    "survey_2025_result_has_database_have_worked_with": {
+			    "dim_ID_es_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_IDEs"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_ID_es": {
+			          "Target": {
+			            "Entity": "dim_ID_es"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.database_have_worked_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.database_have_worked_with"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.database_have_worked_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_database_have_worked_with"
-			        }
-			      ]
+			      }
 			    },
-			    "survey_2025_result_has_database_want_to_work_with": {
+			    "dim_dev_type_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_DevType"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_dev_type": {
+			          "Target": {
+			            "Entity": "dim_dev_type"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.database_want_to_work_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.database_want_to_work_with"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.database_want_to_work_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_database_want_to_work_with"
-			        }
-			      ]
+			      }
 			    },
-			    "survey_2025_result_has_platform_have_worked_with": {
+			    "dim_OS_has_survey_2025_result": {
 			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
+			        "ConceptualEntity": "dim_OS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
+			        "dim_OS": {
+			          "Target": {
+			            "Entity": "dim_OS"
+			          }
+			        },
 			        "survey_2025_result": {
 			          "Target": {
 			            "Entity": "survey_2025_result"
 			          }
-			        },
-			        "survey_2025_result.platform_have_worked_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.platform_have_worked_with"
-			          }
 			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.platform_have_worked_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_platform_have_worked_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_platform_want_to_work_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.platform_want_to_work_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.platform_want_to_work_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.platform_want_to_work_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_platform_want_to_work_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_webframe_have_worked_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.webframe_have_worked_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.webframe_have_worked_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.webframe_have_worked_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_webframe_have_worked_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_webframe_want_to_work_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.webframe_want_to_work_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.webframe_want_to_work_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.webframe_want_to_work_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_webframe_want_to_work_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_dev_envs_have_worked_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.dev_envs_have_worked_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.dev_envs_have_worked_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.dev_envs_have_worked_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_dev_envs_have_worked_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_dev_envs_want_to_work_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.dev_envs_want_to_work_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.dev_envs_want_to_work_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.dev_envs_want_to_work_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_dev_envs_want_to_work_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_OpSysPersonal_use": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.OpSysPersonal_use": {
-			          "Target": {
-			            "Entity": "survey_2025_result.OpSysPersonal_use"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.OpSysPersonal_use"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_OpSysPersonal_uses"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_OpSysProfessional_use": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.OpSysProfessional_use": {
-			          "Target": {
-			            "Entity": "survey_2025_result.OpSysProfessional_use"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.OpSysProfessional_use"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_OpSysProfessional_uses"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_models_have_worked_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_models_have_worked_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_models_have_worked_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_models_have_worked_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_models_have_worked_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_models_want_to_work_with": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_models_want_to_work_with": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_models_want_to_work_with"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_models_want_to_work_with"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_models_want_to_work_with"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_select": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_select": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_select"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_select"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_selects"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_sent": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_sent": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_sent"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_sent"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_sent"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_acc": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_acc": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_acc"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_acc"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_accs"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_complex": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_complex": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_complex"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_complex"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_complexes"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AIToolCurrently_partially_AI": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AIToolCurrently_partially_AI": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AIToolCurrently_partially_AI"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AIToolCurrently_partially_AI"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AIToolCurrently_partially_AI"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AIToolDont_plan_to_use_AI_for_this_task": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AIToolDont_plan_to_use_AI_for_this_task": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AIToolDont_plan_to_use_AI_for_this_task"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AIToolDont_plan_to_use_AI_for_this_task"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AIToolDont_plan_to_use_AI_for_this_task"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AIToolPlan_to_partially_use_AI": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AIToolPlan_to_partially_use_AI": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AIToolPlan_to_partially_use_AI"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AIToolPlan_to_partially_use_AI"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AIToolPlan_to_partially_use_AI"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AIToolPlan_to_mostly_use_AI": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AIToolPlan_to_mostly_use_AI": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AIToolPlan_to_mostly_use_AI"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AIToolPlan_to_mostly_use_AI"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AIToolPlan_to_mostly_use_AI"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AIToolCurrently_mostly_AI": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AIToolCurrently_mostly_AI": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AIToolCurrently_mostly_AI"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AIToolCurrently_mostly_AI"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AIToolCurrently_mostly_AI"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_frustration": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_frustration": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_frustration"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_frustration"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_frustrations"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_explain": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_explain": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_explain"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_explain"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_explain"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_agent": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_agent": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_agent"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_agent"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_agents"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_agent_change": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_agent_change": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_agent_change"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_agent_change"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_agent_changes"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_agent_use": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_agent_use": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_agent_use"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_agent_use"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_agent_uses"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_human": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_human": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_human"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_human"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_humans"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_open": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_open": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_open"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_open"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_opens"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_converted_comp_yearly": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.converted_comp_yearly": {
-			          "Target": {
-			            "Entity": "survey_2025_result.converted_comp_yearly"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.converted_comp_yearly"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_converted_comp_yearlies"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_job_sat": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.job_sat": {
-			          "Target": {
-			            "Entity": "survey_2025_result.job_sat"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.job_sat"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_job_sat"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_experience_range": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.experience_range": {
-			          "Target": {
-			            "Entity": "survey_2025_result.experience_range"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.experience_range"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_experience_ranges"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_region": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.region": {
-			          "Target": {
-			            "Entity": "survey_2025_result.region"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.region"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_regions"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_total_respondents": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.total_respondents": {
-			          "Target": {
-			            "Entity": "survey_2025_result.total_respondents"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.total_respondents"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_total_respondents"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_adoption": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_adoption": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_adoption"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_adoption"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have__AI_adoption"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_daily_AI_use": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.daily_AI_use": {
-			          "Target": {
-			            "Entity": "survey_2025_result.daily_AI_use"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.daily_AI_use"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have__daily_AI_use"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_favorable_sentiment": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.favorable_sentiment": {
-			          "Target": {
-			            "Entity": "survey_2025_result.favorable_sentiment"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.favorable_sentiment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have__favorable_sentiment"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_trust_AI": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.trust_AI": {
-			          "Target": {
-			            "Entity": "survey_2025_result.trust_AI"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.trust_AI"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have__trust_AI"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_median_salary_USD": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.median_salary_USD": {
-			          "Target": {
-			            "Entity": "survey_2025_result.median_salary_USD"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.median_salary_USD"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_median_salary_USD"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_distrust_AI": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.distrust_AI": {
-			          "Target": {
-			            "Entity": "survey_2025_result.distrust_AI"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.distrust_AI"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have__distrust_AI"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_unfavorable_sentiment": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.unfavorable_sentiment": {
-			          "Target": {
-			            "Entity": "survey_2025_result.unfavorable_sentiment"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.unfavorable_sentiment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have__unfavorable_sentiment"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_AI_users_count": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.AI_users_count": {
-			          "Target": {
-			            "Entity": "survey_2025_result.AI_users_count"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.AI_users_count"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_AI_users_count"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_nonAI_users_count": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.nonAI_users_count": {
-			          "Target": {
-			            "Entity": "survey_2025_result.nonAI_users_count"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.nonAI_users_count"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_nonAI_users_count"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_ChatGPT": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_ChatGPT": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_ChatGPT"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_ChatGPT"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_ChatGPT"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_gemini": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_gemini": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_gemini"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_gemini"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_gemini"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_claude": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_claude": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_claude"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_claude"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_claude"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_llama": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_llama": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_llama"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_llama"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_llama"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_DeepSeek": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_DeepSeek": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_DeepSeek"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_DeepSeek"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_DeepSeek"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_mistral": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_mistral": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_mistral"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_mistral"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_mistral"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_Phi4": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_Phi4": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_Phi4"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_Phi4"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_Phi4"
-			        }
-			      ]
-			    },
-			    "survey_2025_result_has_users_grok": {
-			      "Binding": {
-			        "ConceptualEntity": "survey_2025_results"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "survey_2025_result": {
-			          "Target": {
-			            "Entity": "survey_2025_result"
-			          }
-			        },
-			        "survey_2025_result.users_grok": {
-			          "Target": {
-			            "Entity": "survey_2025_result.users_grok"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "survey_2025_result"
-			            },
-			            "Object": {
-			              "Role": "survey_2025_result.users_grok"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "survey_2025_results_have_users_grok"
-			        }
-			      ]
+			      }
 			    }
 			  },
 			  "Agents": {
