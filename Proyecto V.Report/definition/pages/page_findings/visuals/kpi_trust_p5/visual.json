@@ -37,9 +37,6 @@
       "labels": [
         {
           "properties": {
-            "color": {
-              "solid": {}
-            },
             "fontSize": {
               "expr": {
                 "Literal": {

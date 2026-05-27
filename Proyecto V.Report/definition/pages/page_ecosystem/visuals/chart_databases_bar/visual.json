@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "survey_2025_results"
+                      "Entity": "dim_Databases"
                     }
                   },
-                  "Property": "DatabaseHaveWorkedWith"
+                  "Property": "Database"
                 }
               },
-              "queryRef": "survey_2025_results.DatabaseHaveWorkedWith",
+              "queryRef": "dim_Databases.Database",
               "active": true,
               "displayName": "Base de datos"
             }
@@ -54,11 +54,7 @@
     "objects": {
       "dataPoint": [
         {
-          "properties": {
-            "fill": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ]
     },

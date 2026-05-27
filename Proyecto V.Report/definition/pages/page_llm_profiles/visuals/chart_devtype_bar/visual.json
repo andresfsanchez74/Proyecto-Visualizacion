@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "survey_2025_results"
+                      "Entity": "dim_DevType"
                     }
                   },
-                  "Property": "DevType"
+                  "Property": "DevTypeValue"
                 }
               },
-              "queryRef": "survey_2025_results.DevType",
+              "queryRef": "dim_DevType.DevTypeValue",
               "active": true,
               "displayName": "Rol"
             }
@@ -54,11 +54,7 @@
     "objects": {
       "dataPoint": [
         {
-          "properties": {
-            "fill": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ]
     },

@@ -1,0 +1,29 @@
+table dim_AIModels
+	isHidden
+	lineageTag: ff9b6ccc-813a-47e4-959c-05aac3d4067d
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: ca7f5883-5dd9-487a-b506-02f96daabf67
+		sourceColumn: ResponseId
+
+	column AIModel
+		dataType: string
+		lineageTag: f68bb200-bf3e-405d-ba45-9a7e5b94960b
+		sourceColumn: AIModel
+
+	partition dim_AIModels = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "AIModelsHaveWorkedWith"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [AIModelsHaveWorkedWith] <> null and [AIModelsHaveWorkedWith] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"AIModelsHaveWorkedWith", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "AIModelsHaveWorkedWith"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"AIModelsHaveWorkedWith", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"AIModelsHaveWorkedWith", "AIModel"}})
+				in
+				    Renamed
+

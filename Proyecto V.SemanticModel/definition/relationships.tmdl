@@ -1,0 +1,35 @@
+relationship dim_AIModels_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_AIModels.ResponseId
+	toColumn: survey_2025_results.ResponseId
+
+relationship dim_Languages_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_Languages.ResponseId
+	toColumn: survey_2025_results.ResponseId
+
+relationship dim_Databases_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_Databases.ResponseId
+	toColumn: survey_2025_results.ResponseId
+
+relationship dim_Platforms_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_Platforms.ResponseId
+	toColumn: survey_2025_results.ResponseId
+
+relationship dim_IDEs_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_IDEs.ResponseId
+	toColumn: survey_2025_results.ResponseId
+
+relationship dim_DevType_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_DevType.ResponseId
+	toColumn: survey_2025_results.ResponseId
+
+relationship dim_OS_ResponseId_survey_2025_results_ResponseId
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_OS.ResponseId
+	toColumn: survey_2025_results.ResponseId
+

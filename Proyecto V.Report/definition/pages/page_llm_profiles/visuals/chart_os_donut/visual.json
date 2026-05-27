@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "survey_2025_results"
+                      "Entity": "dim_OS"
                     }
                   },
-                  "Property": "OpSysProfessional use"
+                  "Property": "OS"
                 }
               },
-              "queryRef": "survey_2025_results.OpSysProfessional use",
+              "queryRef": "dim_OS.OS",
               "active": true,
               "displayName": "Sistema Operativo"
             }

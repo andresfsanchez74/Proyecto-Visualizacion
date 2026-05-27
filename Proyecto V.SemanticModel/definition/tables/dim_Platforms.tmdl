@@ -1,0 +1,29 @@
+table dim_Platforms
+	isHidden
+	lineageTag: 81819f53-d71a-45bf-b43f-99a152ce3230
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: 550f79ac-5fa1-4d5f-977b-d1d77523fede
+		sourceColumn: ResponseId
+
+	column Platform
+		dataType: string
+		lineageTag: 4f3a3f93-a609-4e7a-9a3f-daddcf0debc6
+		sourceColumn: Platform
+
+	partition dim_Platforms = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "PlatformHaveWorkedWith"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [PlatformHaveWorkedWith] <> null and [PlatformHaveWorkedWith] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"PlatformHaveWorkedWith", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "PlatformHaveWorkedWith"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"PlatformHaveWorkedWith", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"PlatformHaveWorkedWith", "Platform"}})
+				in
+				    Renamed
+

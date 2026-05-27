@@ -1,0 +1,29 @@
+table dim_Languages
+	isHidden
+	lineageTag: a9d694b2-72c8-4998-b55c-5559aac9afa3
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: 4fe20378-a9f2-4741-8ad5-6c9c811abdc9
+		sourceColumn: ResponseId
+
+	column Language
+		dataType: string
+		lineageTag: 21092b6d-a810-41cd-a960-d61a2fd1df40
+		sourceColumn: Language
+
+	partition dim_Languages = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "LanguageHaveWorkedWith"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [LanguageHaveWorkedWith] <> null and [LanguageHaveWorkedWith] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"LanguageHaveWorkedWith", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "LanguageHaveWorkedWith"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"LanguageHaveWorkedWith", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"LanguageHaveWorkedWith", "Language"}})
+				in
+				    Renamed
+

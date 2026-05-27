@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "survey_2025_results"
+                      "Entity": "dim_Languages"
                     }
                   },
-                  "Property": "LanguageHaveWorkedWith"
+                  "Property": "Language"
                 }
               },
-              "queryRef": "survey_2025_results.LanguageHaveWorkedWith",
+              "queryRef": "dim_Languages.Language",
               "active": true,
               "displayName": "Lenguaje"
             }

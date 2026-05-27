@@ -50,20 +50,12 @@
       ],
       "header": [
         {
-          "properties": {
-            "fontColor": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ],
       "items": [
         {
-          "properties": {
-            "fontColor": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ],
       "general": [

@@ -54,11 +54,7 @@
     "objects": {
       "dataPoint": [
         {
-          "properties": {
-            "fill": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ],
       "labels": [

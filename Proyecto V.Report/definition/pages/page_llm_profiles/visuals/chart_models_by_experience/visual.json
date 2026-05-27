@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "survey_2025_results"
+                      "Entity": "dim_AIModels"
                     }
                   },
-                  "Property": "AIModelsHaveWorkedWith"
+                  "Property": "AIModel"
                 }
               },
-              "queryRef": "survey_2025_results.AIModelsHaveWorkedWith",
+              "queryRef": "dim_AIModels.AIModel",
               "active": true,
               "displayName": "Modelo LLM"
             }

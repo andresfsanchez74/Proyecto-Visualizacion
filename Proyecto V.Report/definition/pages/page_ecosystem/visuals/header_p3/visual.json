@@ -15,9 +15,6 @@
       "fill": [
         {
           "properties": {
-            "fillColor": {
-              "solid": {}
-            },
             "transparency": {
               "expr": {
                 "Literal": {

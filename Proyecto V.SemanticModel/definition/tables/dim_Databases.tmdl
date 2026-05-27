@@ -1,0 +1,29 @@
+table dim_Databases
+	isHidden
+	lineageTag: 340c138b-6ec0-419a-b076-dbaa8896b212
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: e3e1d807-4460-46e7-b7a4-21467e422727
+		sourceColumn: ResponseId
+
+	column Database
+		dataType: string
+		lineageTag: 38497abc-69c7-48eb-b2cb-f1d57fdb014a
+		sourceColumn: Database
+
+	partition dim_Databases = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "DatabaseHaveWorkedWith"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [DatabaseHaveWorkedWith] <> null and [DatabaseHaveWorkedWith] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"DatabaseHaveWorkedWith", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "DatabaseHaveWorkedWith"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"DatabaseHaveWorkedWith", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"DatabaseHaveWorkedWith", "Database"}})
+				in
+				    Renamed
+

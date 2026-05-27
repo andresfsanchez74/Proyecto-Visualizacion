@@ -1,0 +1,29 @@
+table dim_DevType
+	isHidden
+	lineageTag: 762bd0b7-f82e-42cd-9936-a6b1190e8b52
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: 7611a387-ae91-4e77-a688-109f9b20492a
+		sourceColumn: ResponseId
+
+	column DevTypeValue
+		dataType: string
+		lineageTag: abce1157-7349-4e00-afb0-ebcc327ad580
+		sourceColumn: DevTypeValue
+
+	partition dim_DevType = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "DevType"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [DevType] <> null and [DevType] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"DevType", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "DevType"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"DevType", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"DevType", "DevTypeValue"}})
+				in
+				    Renamed
+

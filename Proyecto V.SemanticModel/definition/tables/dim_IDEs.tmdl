@@ -1,0 +1,29 @@
+table dim_IDEs
+	isHidden
+	lineageTag: 076efd47-93a4-4df2-9564-60c19584ce29
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: 98e85650-4887-4960-a207-8ee5cb6134e0
+		sourceColumn: ResponseId
+
+	column IDE
+		dataType: string
+		lineageTag: 48a9a00b-9fa3-411b-bab7-35e1f811cade
+		sourceColumn: IDE
+
+	partition dim_IDEs = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "DevEnvsHaveWorkedWith"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [DevEnvsHaveWorkedWith] <> null and [DevEnvsHaveWorkedWith] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"DevEnvsHaveWorkedWith", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "DevEnvsHaveWorkedWith"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"DevEnvsHaveWorkedWith", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"DevEnvsHaveWorkedWith", "IDE"}})
+				in
+				    Renamed
+

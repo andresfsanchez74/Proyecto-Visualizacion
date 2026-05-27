@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "survey_2025_results"
+                      "Entity": "dim_IDEs"
                     }
                   },
-                  "Property": "DevEnvsHaveWorkedWith"
+                  "Property": "IDE"
                 }
               },
-              "queryRef": "survey_2025_results.DevEnvsHaveWorkedWith",
+              "queryRef": "dim_IDEs.IDE",
               "active": true,
               "displayName": "IDE / Editor"
             }
@@ -54,11 +54,7 @@
     "objects": {
       "dataPoint": [
         {
-          "properties": {
-            "fill": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ]
     },

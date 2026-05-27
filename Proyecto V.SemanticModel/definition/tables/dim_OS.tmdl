@@ -1,0 +1,29 @@
+table dim_OS
+	isHidden
+	lineageTag: 2e1a8a66-23c8-4340-ad96-7f6dd307368d
+
+	column ResponseId
+		dataType: int64
+		isNullable: false
+		lineageTag: c53daebd-e659-464a-9fa0-d754528c589a
+		sourceColumn: ResponseId
+
+	column OS
+		dataType: string
+		lineageTag: 85e7b4ff-9200-4696-af49-5835971b6b95
+		sourceColumn: OS
+
+	partition dim_OS = m
+		mode: import
+		source =
+				let
+				    Source = survey_2025_results,
+				    SelectCols = Table.SelectColumns(Source, {"ResponseId", "OpSysProfessional use"}),
+				    FilterBlanks = Table.SelectRows(SelectCols, each [#"OpSysProfessional use"] <> null and [#"OpSysProfessional use"] <> ""),
+				    Split = Table.TransformColumns(FilterBlanks, {{"OpSysProfessional use", each Text.Split(_, ";")}}),
+				    Expanded = Table.ExpandListColumn(Split, "OpSysProfessional use"),
+				    Trimmed = Table.TransformColumns(Expanded, {{"OpSysProfessional use", Text.Trim}}),
+				    Renamed = Table.RenameColumns(Trimmed, {{"OpSysProfessional use", "OS"}})
+				in
+				    Renamed
+

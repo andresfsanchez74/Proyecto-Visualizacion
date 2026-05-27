@@ -13,6 +13,13 @@ annotation PBI_QueryOrder = ["survey_2025_results"]
 annotation PBI_ProTooling = ["MCP-PBIModeling","DevMode"]
 
 ref table survey_2025_results
+ref table dim_AIModels
+ref table dim_Languages
+ref table dim_Databases
+ref table dim_Platforms
+ref table dim_IDEs
+ref table dim_DevType
+ref table dim_OS
 
 ref cultureInfo es-CO
 

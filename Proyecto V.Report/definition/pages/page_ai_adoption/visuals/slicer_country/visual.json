@@ -50,11 +50,7 @@
       ],
       "header": [
         {
-          "properties": {
-            "fontColor": {
-              "solid": {}
-            }
-          }
+          "properties": {}
         }
       ]
     },
