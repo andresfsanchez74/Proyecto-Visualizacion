@@ -1,0 +1,128 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "page_llm_profiles",
+  "displayName": "Perfiles y Modelos LLM",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [ { "properties": { "color": { "solid": { "color": "#F8FAFC" } }, "transparency": { "expr": { "Literal": { "Value": "0D" } } } } } ]
+  },
+  "visuals": [
+    {
+      "name": "header_p4",
+      "position": { "x": 0, "y": 0, "z": 0, "width": 1280, "height": 55, "tabOrder": 0 },
+      "visual": {
+        "visualType": "shape",
+        "objects": {
+          "line": [ { "properties": { "transparency": { "expr": { "Literal": { "Value": "100D" } } } } } ],
+          "fill": [ { "properties": { "fillColor": { "solid": { "color": "#1E293B" } }, "transparency": { "expr": { "Literal": { "Value": "0D" } } } } } ]
+        }
+      }
+    },
+    {
+      "name": "title_p4",
+      "position": { "x": 20, "y": 8, "z": 1, "width": 600, "height": 40, "tabOrder": 1 },
+      "visual": {
+        "visualType": "textbox",
+        "objects": { "general": [ { "properties": { "paragraphs": [ { "textRuns": [ { "value": "Perfiles de Desarrollador y Modelos LLM", "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "20px", "color": "#FFFFFF" } } ] } ] } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_salary_p4",
+      "position": { "x": 20, "y": 65, "z": 2, "width": 195, "height": 90, "tabOrder": 2 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Median Salary USD" } }, "queryRef": "survey_2025_results.Median Salary USD", "displayName": "Salario Mediano" } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#10B981" } }, "fontSize": { "expr": { "Literal": { "Value": "28D" } } } } } ], "categoryLabels": [ { "properties": { "color": { "solid": { "color": "#94A3B8" } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_ai_users_p4",
+      "position": { "x": 225, "y": 65, "z": 2, "width": 195, "height": 90, "tabOrder": 3 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "AI Users Count" } }, "queryRef": "survey_2025_results.AI Users Count", "displayName": "Usuarios IA" } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#3B82F6" } }, "fontSize": { "expr": { "Literal": { "Value": "28D" } } } } } ], "categoryLabels": [ { "properties": { "color": { "solid": { "color": "#94A3B8" } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "chart_models_by_experience",
+      "position": { "x": 20, "y": 165, "z": 3, "width": 810, "height": 260, "tabOrder": 4 },
+      "visual": {
+        "visualType": "clusteredBarChart",
+        "query": {
+          "queryState": {
+            "Category": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "AIModelsHaveWorkedWith" } }, "queryRef": "survey_2025_results.AIModelsHaveWorkedWith", "displayName": "Modelo LLM" } ] },
+            "Series": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "ExperienceRange" } }, "queryRef": "survey_2025_results.ExperienceRange" } ] },
+            "Y": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Total Respondents" } }, "queryRef": "survey_2025_results.Total Respondents" } ] }
+          }
+        },
+        "objects": {
+          "title": [ { "properties": { "titleText": { "expr": { "Literal": { "Value": "'Modelos LLM preferidos por nivel de experiencia'" } } }, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "13D" } } } } } ],
+          "legend": [ { "properties": { "show": { "expr": { "Literal": { "Value": "true" } } }, "position": { "expr": { "Literal": { "Value": "'Bottom'" } } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "chart_devtype_bar",
+      "position": { "x": 20, "y": 435, "z": 3, "width": 400, "height": 275, "tabOrder": 5 },
+      "visual": {
+        "visualType": "barChart",
+        "query": {
+          "queryState": {
+            "Category": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "DevType" } }, "queryRef": "survey_2025_results.DevType", "displayName": "Rol" } ] },
+            "Y": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Total Respondents" } }, "queryRef": "survey_2025_results.Total Respondents" } ] }
+          }
+        },
+        "objects": {
+          "title": [ { "properties": { "titleText": { "expr": { "Literal": { "Value": "'Distribución por rol de desarrollador'" } } }, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "12D" } } } } } ],
+          "dataPoint": [ { "properties": { "fill": { "solid": { "color": "#3B82F6" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "chart_os_donut",
+      "position": { "x": 430, "y": 435, "z": 3, "width": 400, "height": 275, "tabOrder": 6 },
+      "visual": {
+        "visualType": "donutChart",
+        "query": {
+          "queryState": {
+            "Category": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "OpSysProfessional use" } }, "queryRef": "survey_2025_results.OpSysProfessional use", "displayName": "Sistema Operativo" } ] },
+            "Y": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Total Respondents" } }, "queryRef": "survey_2025_results.Total Respondents" } ] }
+          }
+        },
+        "objects": {
+          "title": [ { "properties": { "titleText": { "expr": { "Literal": { "Value": "'Sistema operativo profesional'" } } }, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "12D" } } } } } ],
+          "legend": [ { "properties": { "show": { "expr": { "Literal": { "Value": "true" } } }, "position": { "expr": { "Literal": { "Value": "'Right'" } } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "slicer_region_p4",
+      "position": { "x": 850, "y": 65, "z": 4, "width": 200, "height": 160, "tabOrder": 7 },
+      "visual": {
+        "visualType": "slicer",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Region" } }, "queryRef": "survey_2025_results.Region", "displayName": "Región" } ] } } },
+        "objects": { "data": [ { "properties": { "mode": { "expr": { "Literal": { "Value": "'Basic'" } } } } } ], "header": [ { "properties": { "fontColor": { "solid": { "color": "#1E293B" } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "slicer_exp_p4",
+      "position": { "x": 850, "y": 235, "z": 4, "width": 200, "height": 160, "tabOrder": 8 },
+      "visual": {
+        "visualType": "slicer",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "ExperienceRange" } }, "queryRef": "survey_2025_results.ExperienceRange", "displayName": "Experiencia" } ] } } },
+        "objects": { "data": [ { "properties": { "mode": { "expr": { "Literal": { "Value": "'Basic'" } } } } } ], "header": [ { "properties": { "fontColor": { "solid": { "color": "#1E293B" } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    }
+  ]
+}

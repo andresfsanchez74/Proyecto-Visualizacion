@@ -1,0 +1,132 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "page_findings",
+  "displayName": "Hallazgos y Recomendaciones",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [ { "properties": { "color": { "solid": { "color": "#F8FAFC" } }, "transparency": { "expr": { "Literal": { "Value": "0D" } } } } } ]
+  },
+  "visuals": [
+    {
+      "name": "header_p5",
+      "position": { "x": 0, "y": 0, "z": 0, "width": 1280, "height": 55, "tabOrder": 0 },
+      "visual": {
+        "visualType": "shape",
+        "objects": {
+          "line": [ { "properties": { "transparency": { "expr": { "Literal": { "Value": "100D" } } } } } ],
+          "fill": [ { "properties": { "fillColor": { "solid": { "color": "#1E293B" } }, "transparency": { "expr": { "Literal": { "Value": "0D" } } } } } ]
+        }
+      }
+    },
+    {
+      "name": "title_p5",
+      "position": { "x": 20, "y": 8, "z": 1, "width": 600, "height": 40, "tabOrder": 1 },
+      "visual": {
+        "visualType": "textbox",
+        "objects": { "general": [ { "properties": { "paragraphs": [ { "textRuns": [ { "value": "Hallazgos y Recomendaciones", "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "20px", "color": "#FFFFFF" } } ] } ] } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_adoption_p5",
+      "position": { "x": 20, "y": 65, "z": 2, "width": 155, "height": 80, "tabOrder": 2 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% AI Adoption" } }, "queryRef": "survey_2025_results.% AI Adoption", "displayName": "Adopción IA" } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#3B82F6" } }, "fontSize": { "expr": { "Literal": { "Value": "22D" } } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_trust_p5",
+      "position": { "x": 185, "y": 65, "z": 2, "width": 155, "height": 80, "tabOrder": 3 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Trust AI" } }, "queryRef": "survey_2025_results.% Trust AI", "displayName": "Confianza" } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#F59E0B" } }, "fontSize": { "expr": { "Literal": { "Value": "22D" } } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_daily_p5",
+      "position": { "x": 350, "y": 65, "z": 2, "width": 155, "height": 80, "tabOrder": 4 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Daily AI Use" } }, "queryRef": "survey_2025_results.% Daily AI Use", "displayName": "Uso Diario" } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#3B82F6" } }, "fontSize": { "expr": { "Literal": { "Value": "22D" } } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_favorable_p5",
+      "position": { "x": 515, "y": 65, "z": 2, "width": 155, "height": 80, "tabOrder": 5 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Favorable Sentiment" } }, "queryRef": "survey_2025_results.% Favorable Sentiment", "displayName": "Favorable" } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#10B981" } }, "fontSize": { "expr": { "Literal": { "Value": "22D" } } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_salary_p5",
+      "position": { "x": 680, "y": 65, "z": 2, "width": 155, "height": 80, "tabOrder": 6 },
+      "visual": {
+        "visualType": "card",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Median Salary USD" } }, "queryRef": "survey_2025_results.Median Salary USD", "displayName": "Salario Med." } ] } } },
+        "objects": { "labels": [ { "properties": { "color": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "22D" } } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "findings_text",
+      "position": { "x": 20, "y": 155, "z": 3, "width": 820, "height": 550, "tabOrder": 7 },
+      "visual": {
+        "visualType": "textbox",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "paragraphs": [
+                  { "textRuns": [ { "value": "Hallazgo 1: La Paradoja de la Adopción", "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "16px", "color": "#1E293B" } } ] },
+                  { "textRuns": [ { "value": "El 80.8% de los desarrolladores profesionales usa herramientas de IA, pero solo el 32.4% confía en ellas. El 45.9% reporta algún nivel de desconfianza. Esto sugiere que la adopción está impulsada por presión competitiva, no por convicción.", "textStyle": { "fontFamily": "Segoe UI", "fontSize": "12px", "color": "#475569" } } ] },
+                  { "textRuns": [ { "value": "", "textStyle": { "fontSize": "8px" } } ] },
+                  { "textRuns": [ { "value": "Hallazgo 2: ChatGPT domina pero Claude crece", "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "16px", "color": "#1E293B" } } ] },
+                  { "textRuns": [ { "value": "ChatGPT lidera con 10,882 usuarios entre profesionales, seguido por Claude (5,970) y Gemini (5,461). DeepSeek emerge como contendiente con 3,327 usuarios. La diversificación del mercado LLM abre oportunidades de negociación de licencias.", "textStyle": { "fontFamily": "Segoe UI", "fontSize": "12px", "color": "#475569" } } ] },
+                  { "textRuns": [ { "value": "", "textStyle": { "fontSize": "8px" } } ] },
+                  { "textRuns": [ { "value": "Hallazgo 3: El uso diario ya es norma", "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "16px", "color": "#1E293B" } } ] },
+                  { "textRuns": [ { "value": "El 50.6% usa herramientas IA diariamente. Esto indica que la IA ya no es experimental sino parte del flujo de trabajo estándar. Las empresas que no estandaricen herramientas IA arriesgan productividad.", "textStyle": { "fontFamily": "Segoe UI", "fontSize": "12px", "color": "#475569" } } ] },
+                  { "textRuns": [ { "value": "", "textStyle": { "fontSize": "8px" } } ] },
+                  { "textRuns": [ { "value": "Recomendación para el VP de Ingeniería", "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "16px", "color": "#3B82F6" } } ] },
+                  { "textRuns": [ { "value": "1. Estandarizar ChatGPT + un modelo alternativo (Claude o Gemini) para diversificar riesgo.\n2. Invertir en capacitación sobre uso efectivo de IA para cerrar la brecha de confianza.\n3. Monitorear satisfacción del equipo con herramientas IA trimestralmente.\n4. Evaluar DeepSeek y modelos open-source para casos de uso internos sensibles.", "textStyle": { "fontFamily": "Segoe UI", "fontSize": "12px", "color": "#475569" } } ] }
+                ]
+              }
+            }
+          ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "slicer_region_p5",
+      "position": { "x": 860, "y": 155, "z": 4, "width": 190, "height": 140, "tabOrder": 8 },
+      "visual": {
+        "visualType": "slicer",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Region" } }, "queryRef": "survey_2025_results.Region", "displayName": "Región" } ] } } },
+        "objects": { "data": [ { "properties": { "mode": { "expr": { "Literal": { "Value": "'Basic'" } } } } } ], "header": [ { "properties": { "fontColor": { "solid": { "color": "#1E293B" } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "slicer_exp_p5",
+      "position": { "x": 860, "y": 305, "z": 4, "width": 190, "height": 140, "tabOrder": 9 },
+      "visual": {
+        "visualType": "slicer",
+        "query": { "queryState": { "Values": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "ExperienceRange" } }, "queryRef": "survey_2025_results.ExperienceRange", "displayName": "Experiencia" } ] } } },
+        "objects": { "data": [ { "properties": { "mode": { "expr": { "Literal": { "Value": "'Basic'" } } } } } ], "header": [ { "properties": { "fontColor": { "solid": { "color": "#1E293B" } } } } ] },
+        "drillFilterOtherVisuals": true
+      }
+    }
+  ]
+}

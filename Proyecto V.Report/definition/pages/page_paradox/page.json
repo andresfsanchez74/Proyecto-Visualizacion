@@ -1,0 +1,297 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "page_paradox",
+  "displayName": "La Paradoja: Confianza vs Adopción",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": { "solid": { "color": "#F8FAFC" } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }
+    ]
+  },
+  "visuals": [
+    {
+      "name": "header_shape_p2",
+      "position": { "x": 0, "y": 0, "z": 0, "width": 1280, "height": 55, "tabOrder": 0 },
+      "visual": {
+        "visualType": "shape",
+        "objects": {
+          "line": [ { "properties": { "transparency": { "expr": { "Literal": { "Value": "100D" } } } } } ],
+          "fill": [ { "properties": { "fillColor": { "solid": { "color": "#1E293B" } }, "transparency": { "expr": { "Literal": { "Value": "0D" } } } } } ]
+        }
+      }
+    },
+    {
+      "name": "title_p2",
+      "position": { "x": 20, "y": 8, "z": 1, "width": 600, "height": 40, "tabOrder": 1 },
+      "visual": {
+        "visualType": "textbox",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "paragraphs": [
+                  {
+                    "textRuns": [
+                      {
+                        "value": "La Paradoja: 80% adopta IA pero solo 32% confía",
+                        "textStyle": { "fontFamily": "Segoe UI Semibold", "fontSize": "18px", "color": "#FFFFFF" }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_adoption_p2",
+      "position": { "x": 20, "y": 65, "z": 2, "width": 195, "height": 90, "tabOrder": 2 },
+      "visual": {
+        "visualType": "card",
+        "query": {
+          "queryState": {
+            "Values": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% AI Adoption" } },
+                  "queryRef": "survey_2025_results.% AI Adoption",
+                  "displayName": "Adopción IA"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "labels": [ { "properties": { "color": { "solid": { "color": "#3B82F6" } }, "fontSize": { "expr": { "Literal": { "Value": "28D" } } } } } ],
+          "categoryLabels": [ { "properties": { "color": { "solid": { "color": "#94A3B8" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_trust_p2",
+      "position": { "x": 225, "y": 65, "z": 2, "width": 195, "height": 90, "tabOrder": 3 },
+      "visual": {
+        "visualType": "card",
+        "query": {
+          "queryState": {
+            "Values": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Trust AI" } },
+                  "queryRef": "survey_2025_results.% Trust AI",
+                  "displayName": "Confían en IA"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "labels": [ { "properties": { "color": { "solid": { "color": "#F59E0B" } }, "fontSize": { "expr": { "Literal": { "Value": "28D" } } } } } ],
+          "categoryLabels": [ { "properties": { "color": { "solid": { "color": "#94A3B8" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_distrust_p2",
+      "position": { "x": 430, "y": 65, "z": 2, "width": 195, "height": 90, "tabOrder": 4 },
+      "visual": {
+        "visualType": "card",
+        "query": {
+          "queryState": {
+            "Values": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Distrust AI" } },
+                  "queryRef": "survey_2025_results.% Distrust AI",
+                  "displayName": "Desconfían de IA"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "labels": [ { "properties": { "color": { "solid": { "color": "#EF4444" } }, "fontSize": { "expr": { "Literal": { "Value": "28D" } } } } } ],
+          "categoryLabels": [ { "properties": { "color": { "solid": { "color": "#94A3B8" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "kpi_favorable_p2",
+      "position": { "x": 635, "y": 65, "z": 2, "width": 195, "height": 90, "tabOrder": 5 },
+      "visual": {
+        "visualType": "card",
+        "query": {
+          "queryState": {
+            "Values": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Favorable Sentiment" } },
+                  "queryRef": "survey_2025_results.% Favorable Sentiment",
+                  "displayName": "Sentimiento Favorable"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "labels": [ { "properties": { "color": { "solid": { "color": "#10B981" } }, "fontSize": { "expr": { "Literal": { "Value": "28D" } } } } } ],
+          "categoryLabels": [ { "properties": { "color": { "solid": { "color": "#94A3B8" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "chart_trust_distribution",
+      "position": { "x": 20, "y": 165, "z": 3, "width": 810, "height": 260, "tabOrder": 6 },
+      "visual": {
+        "visualType": "barChart",
+        "query": {
+          "queryState": {
+            "Category": {
+              "projections": [
+                {
+                  "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "AIAcc" } },
+                  "queryRef": "survey_2025_results.AIAcc",
+                  "displayName": "Nivel de Confianza"
+                }
+              ]
+            },
+            "Y": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Total Respondents" } },
+                  "queryRef": "survey_2025_results.Total Respondents"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "title": [ { "properties": { "titleText": { "expr": { "Literal": { "Value": "'Distribución de Confianza en IA'" } } }, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "13D" } } } } } ],
+          "labels": [ { "properties": { "show": { "expr": { "Literal": { "Value": "true" } } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "chart_sentiment_by_experience",
+      "position": { "x": 20, "y": 435, "z": 3, "width": 400, "height": 275, "tabOrder": 7 },
+      "visual": {
+        "visualType": "clusteredBarChart",
+        "query": {
+          "queryState": {
+            "Category": {
+              "projections": [
+                {
+                  "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "ExperienceRange" } },
+                  "queryRef": "survey_2025_results.ExperienceRange",
+                  "displayName": "Experiencia"
+                }
+              ]
+            },
+            "Series": {
+              "projections": [
+                {
+                  "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "AISent" } },
+                  "queryRef": "survey_2025_results.AISent"
+                }
+              ]
+            },
+            "Y": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Total Respondents" } },
+                  "queryRef": "survey_2025_results.Total Respondents"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "title": [ { "properties": { "titleText": { "expr": { "Literal": { "Value": "'Sentimiento IA por nivel de experiencia'" } } }, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "12D" } } } } } ],
+          "legend": [ { "properties": { "show": { "expr": { "Literal": { "Value": "true" } } }, "position": { "expr": { "Literal": { "Value": "'Bottom'" } } }, "fontSize": { "expr": { "Literal": { "Value": "9D" } } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "chart_trust_by_region",
+      "position": { "x": 430, "y": 435, "z": 3, "width": 400, "height": 275, "tabOrder": 8 },
+      "visual": {
+        "visualType": "clusteredBarChart",
+        "query": {
+          "queryState": {
+            "Category": {
+              "projections": [
+                {
+                  "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Region" } },
+                  "queryRef": "survey_2025_results.Region",
+                  "displayName": "Región"
+                }
+              ]
+            },
+            "Y": {
+              "projections": [
+                {
+                  "field": { "Measure": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "% Trust AI" } },
+                  "queryRef": "survey_2025_results.% Trust AI"
+                }
+              ]
+            }
+          }
+        },
+        "objects": {
+          "title": [ { "properties": { "titleText": { "expr": { "Literal": { "Value": "'Confianza en IA por región'" } } }, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": { "expr": { "Literal": { "Value": "12D" } } } } } ],
+          "dataPoint": [ { "properties": { "fill": { "solid": { "color": "#F59E0B" } } } } ],
+          "labels": [ { "properties": { "show": { "expr": { "Literal": { "Value": "true" } } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "slicer_region_p2",
+      "position": { "x": 850, "y": 65, "z": 4, "width": 200, "height": 160, "tabOrder": 9 },
+      "visual": {
+        "visualType": "slicer",
+        "query": {
+          "queryState": { "Values": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "Region" } }, "queryRef": "survey_2025_results.Region", "displayName": "Región" } ] } }
+        },
+        "objects": {
+          "data": [ { "properties": { "mode": { "expr": { "Literal": { "Value": "'Basic'" } } } } } ],
+          "header": [ { "properties": { "fontColor": { "solid": { "color": "#1E293B" } } } } ],
+          "items": [ { "properties": { "fontColor": { "solid": { "color": "#475569" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    },
+    {
+      "name": "slicer_experience_p2",
+      "position": { "x": 850, "y": 235, "z": 4, "width": 200, "height": 160, "tabOrder": 10 },
+      "visual": {
+        "visualType": "slicer",
+        "query": {
+          "queryState": { "Values": { "projections": [ { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "survey_2025_results" } }, "Property": "ExperienceRange" } }, "queryRef": "survey_2025_results.ExperienceRange", "displayName": "Experiencia" } ] } }
+        },
+        "objects": {
+          "data": [ { "properties": { "mode": { "expr": { "Literal": { "Value": "'Basic'" } } } } } ],
+          "header": [ { "properties": { "fontColor": { "solid": { "color": "#1E293B" } } } } ],
+          "items": [ { "properties": { "fontColor": { "solid": { "color": "#475569" } } } } ]
+        },
+        "drillFilterOtherVisuals": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+table survey_2025_results
+	lineageTag: 87e0f6a9-d82c-4e75-8b3d-1d2c8b3634eb
+
+	measure 'Total Respondents' = COUNTROWS(survey_2025_results)
+		formatString: #,##0
+		lineageTag: 3d03bc30-1ac9-43b0-a2e3-cad4ed9d686c
+
+	measure '% AI Adoption' = DIVIDE( CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AISelect] IN {"Yes, I use AI tools daily", "Yes, I use AI tools weekly", "Yes, I use AI tools monthly or infrequently"}), CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AISelect])) )
+		formatString: 0.0%
+		lineageTag: 06311904-a575-4eff-9ae1-322dcdac48e0
+
+	measure '% Daily AI Use' = DIVIDE( CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AISelect] = "Yes, I use AI tools daily"), CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AISelect])) )
+		formatString: 0.0%
+		lineageTag: 8791bc1d-4c25-4436-96aa-d602991efea2
+
+	measure '% Favorable Sentiment' = DIVIDE( CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AISent] IN {"Favorable", "Very favorable"}), CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AISent])) )
+		formatString: 0.0%
+		lineageTag: 26d5e848-fc63-4141-a664-30ceeaa7f804
+
+	measure '% Trust AI' = DIVIDE( CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] IN {"Somewhat trust", "Highly trust"}), CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AIAcc])) )
+		formatString: 0.0%
+		lineageTag: 1d59f809-6f63-4bc2-90f0-261f52146379
+
+	measure 'Median Salary USD' = MEDIAN(survey_2025_results[ConvertedCompYearly])
+		formatString: $#,##0
+		lineageTag: 4837626f-e7c5-4896-b35f-4f40f700259f
+
+	measure '% Distrust AI' = DIVIDE( CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] IN {"Somewhat distrust", "Highly distrust"}), CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AIAcc])) )
+		formatString: 0.0%
+		lineageTag: 19685e03-b986-4378-8242-5b1319075f8d
+
+	measure '% Unfavorable Sentiment' = DIVIDE( CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AISent] IN {"Unfavorable", "Very unfavorable"}), CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AISent])) )
+		formatString: 0.0%
+		lineageTag: 2476b02f-53fe-4da1-aeed-fecd8793401a
+
+	measure 'AI Users Count' = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AISelect] IN {"Yes, I use AI tools daily", "Yes, I use AI tools weekly", "Yes, I use AI tools monthly or infrequently"})
+		formatString: #,##0
+		lineageTag: 641782c9-0c16-471e-8a52-ec5b54f705d6
+
+	measure 'Non-AI Users Count' = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AISelect] IN {"No, and I don't plan to", "No, but I plan to soon"})
+		formatString: #,##0
+		lineageTag: ea7cb64a-c392-4f19-94d3-7d1fce7c0487
+
+	measure 'Users ChatGPT' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "openAI GPT"))
+		formatString: #,##0
+		lineageTag: 20e24237-e895-4efc-a0ca-baf0f35696b2
+
+	measure 'Users Gemini' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "Gemini"))
+		formatString: #,##0
+		lineageTag: 7d29d870-d790-419c-a443-aa2b3a527b9b
+
+	measure 'Users Claude' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "Anthropic: Claude"))
+		formatString: #,##0
+		lineageTag: 166668e2-94ee-404f-9c9b-381bd8393611
+
+	measure 'Users Llama' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "Llama"))
+		formatString: #,##0
+		lineageTag: df204ca4-c1a4-467f-82a3-b110ffc5ce21
+
+	measure 'Users DeepSeek' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "DeepSeek"))
+		formatString: #,##0
+		lineageTag: f06a9e27-11e8-45ac-b76f-d00db1c6890c
+
+	measure 'Users Mistral' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "Mistral"))
+		formatString: #,##0
+		lineageTag: 3a7b11bc-af68-4f2e-b443-04e7e936a9f2
+
+	measure 'Users Phi4' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "Microsoft Phi"))
+		formatString: #,##0
+		lineageTag: 847c6f79-96c4-4fb7-9c16-52b29d244715
+
+	measure 'Users Grok' = CALCULATE(COUNTROWS(survey_2025_results), CONTAINSSTRING(survey_2025_results[AIModelsHaveWorkedWith], "Grok"))
+		formatString: #,##0
+		lineageTag: 4364f7bc-b6a5-407b-b6f8-9d78efcc13e9
+
+	column ResponseId
+		dataType: int64
+		formatString: 0
+		lineageTag: 6accfcdc-b205-4ea9-aa9a-cf21a8d58dcf
+		summarizeBy: count
+		sourceColumn: ResponseId
+
+		annotation SummarizationSetBy = Automatic
+
+	column MainBranch
+		dataType: string
+		lineageTag: d038069d-c149-4175-bbf0-b7dbedb5d3ea
+		summarizeBy: none
+		sourceColumn: MainBranch
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: string
+		lineageTag: 2a842f8f-bb1d-46fd-a152-d5e84a80fec5
+		summarizeBy: none
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdLevel
+		dataType: string
+		lineageTag: e63ef298-8a5e-459f-9be1-6355be5a0be1
+		summarizeBy: none
+		sourceColumn: EdLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Employment
+		dataType: string
+		lineageTag: 733b2dfa-59c7-4d95-ada3-c2028437c358
+		summarizeBy: none
+		sourceColumn: Employment
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkExp
+		dataType: int64
+		formatString: 0
+		lineageTag: 527b8d4f-614c-44c9-99fb-2811c11b8750
+		summarizeBy: sum
+		sourceColumn: WorkExp
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearsCode
+		dataType: int64
+		formatString: 0
+		lineageTag: 3de216c5-03d7-4106-8551-42026fc15b21
+		summarizeBy: count
+		sourceColumn: YearsCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column DevType
+		dataType: string
+		lineageTag: 0c358d16-b43b-47b1-a552-fb07ef126d93
+		summarizeBy: none
+		sourceColumn: DevType
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrgSize
+		dataType: string
+		lineageTag: a1eb15b9-3449-48ff-abd8-508c84c87a45
+		summarizeBy: none
+		sourceColumn: OrgSize
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICorPM
+		dataType: string
+		lineageTag: fb0fae62-637a-454e-87d7-145781c9ad9a
+		summarizeBy: none
+		sourceColumn: ICorPM
+
+		annotation SummarizationSetBy = Automatic
+
+	column RemoteWork
+		dataType: string
+		lineageTag: 368f6c97-be98-43d1-9f59-5bb2cda5fe50
+		summarizeBy: none
+		sourceColumn: RemoteWork
+
+		annotation SummarizationSetBy = Automatic
+
+	column Industry
+		dataType: string
+		lineageTag: 7a66e3e5-7dbc-4800-a5ef-ebc820a47f2e
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 42247f76-cba4-4b43-bdb9-b23084446dd4
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Currency
+		dataType: string
+		lineageTag: 02a016a0-daed-403b-9d58-d6d13b9ef8d2
+		summarizeBy: none
+		sourceColumn: Currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column CompTotal
+		dataType: string
+		lineageTag: 0101c036-0af3-42f7-8614-67937845500d
+		summarizeBy: none
+		sourceColumn: CompTotal
+
+		annotation SummarizationSetBy = Automatic
+
+	column LanguageHaveWorkedWith
+		dataType: string
+		lineageTag: 1be0b790-0983-453f-b7d6-a4303484213f
+		summarizeBy: none
+		sourceColumn: LanguageHaveWorkedWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column LanguageWantToWorkWith
+		dataType: string
+		lineageTag: 0020134f-9980-41f9-a298-5d526ff379d6
+		summarizeBy: none
+		sourceColumn: LanguageWantToWorkWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column DatabaseHaveWorkedWith
+		dataType: string
+		lineageTag: fb7a17ef-a305-4df7-996d-08a3a16ca1da
+		summarizeBy: none
+		sourceColumn: DatabaseHaveWorkedWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column DatabaseWantToWorkWith
+		dataType: string
+		lineageTag: 335dd5a9-0ee4-4376-a595-f02052678401
+		summarizeBy: none
+		sourceColumn: DatabaseWantToWorkWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlatformHaveWorkedWith
+		dataType: string
+		lineageTag: 0c1265c2-7c12-4fd2-a80f-6a4ffe92acbf
+		summarizeBy: none
+		sourceColumn: PlatformHaveWorkedWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlatformWantToWorkWith
+		dataType: string
+		lineageTag: 0b2276b1-61d8-40f3-ab89-09b6588c3e58
+		summarizeBy: none
+		sourceColumn: PlatformWantToWorkWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column WebframeHaveWorkedWith
+		dataType: string
+		lineageTag: bde0f056-de04-4384-97c0-98bdae01acc4
+		summarizeBy: none
+		sourceColumn: WebframeHaveWorkedWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column WebframeWantToWorkWith
+		dataType: string
+		lineageTag: 37c6ee37-4520-488b-9330-1548c94c8cd8
+		summarizeBy: none
+		sourceColumn: WebframeWantToWorkWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column DevEnvsHaveWorkedWith
+		dataType: string
+		lineageTag: ab04a873-97e2-4cc0-8148-69ea56fb088f
+		summarizeBy: none
+		sourceColumn: DevEnvsHaveWorkedWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column DevEnvsWantToWorkWith
+		dataType: string
+		lineageTag: 81cdc878-d9a7-4555-ab1c-9397bbddc242
+		summarizeBy: none
+		sourceColumn: DevEnvsWantToWorkWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpSysPersonal use'
+		dataType: string
+		lineageTag: 7cb3928c-1fcc-46db-9b9d-3f079fed8fd8
+		summarizeBy: none
+		sourceColumn: OpSysPersonal use
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpSysProfessional use'
+		dataType: string
+		lineageTag: dca0cd41-ef18-4d63-845a-cf13743ab5ed
+		summarizeBy: none
+		sourceColumn: OpSysProfessional use
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIModelsHaveWorkedWith
+		dataType: string
+		lineageTag: d7bfb56d-7b8e-469c-b21d-13a77aaf8dc8
+		summarizeBy: none
+		sourceColumn: AIModelsHaveWorkedWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIModelsWantToWorkWith
+		dataType: string
+		lineageTag: ca012cef-f13b-4a0b-bf6f-4a1b33c27af4
+		summarizeBy: none
+		sourceColumn: AIModelsWantToWorkWith
+
+		annotation SummarizationSetBy = Automatic
+
+	column AISelect
+		dataType: string
+		lineageTag: c27d465d-0658-42f4-ad08-2efe413ec78c
+		summarizeBy: none
+		sourceColumn: AISelect
+
+		annotation SummarizationSetBy = Automatic
+
+	column AISent
+		dataType: string
+		lineageTag: 5cd7a601-51b5-4c60-9183-b477a9043b35
+		summarizeBy: none
+		sourceColumn: AISent
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIAcc
+		dataType: string
+		lineageTag: 7dadcc10-d612-49e9-9ce7-6c868750bb64
+		summarizeBy: none
+		sourceColumn: AIAcc
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIComplex
+		dataType: string
+		lineageTag: cb569f7d-035f-4d80-b505-69f77a91a24e
+		summarizeBy: none
+		sourceColumn: AIComplex
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AIToolCurrently partially AI'
+		dataType: string
+		lineageTag: 1f06b331-178b-49e7-ada5-afbe6314d09d
+		summarizeBy: none
+		sourceColumn: AIToolCurrently partially AI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AIToolDon''t plan to use AI for this task'
+		dataType: string
+		lineageTag: 0663f286-156e-46c8-a2af-95aa755f3f12
+		summarizeBy: none
+		sourceColumn: AIToolDon't plan to use AI for this task
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AIToolPlan to partially use AI'
+		dataType: string
+		lineageTag: 0d052e3d-4a5f-4e8d-89af-0a16d96f645b
+		summarizeBy: none
+		sourceColumn: AIToolPlan to partially use AI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AIToolPlan to mostly use AI'
+		dataType: string
+		lineageTag: 11f5203e-8259-4553-aeac-7eaae4f5b286
+		summarizeBy: none
+		sourceColumn: AIToolPlan to mostly use AI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AIToolCurrently mostly AI'
+		dataType: string
+		lineageTag: 5152b822-c0b0-4617-bbf6-8a91c80631ab
+		summarizeBy: none
+		sourceColumn: AIToolCurrently mostly AI
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIFrustration
+		dataType: string
+		lineageTag: c5ed6719-07b7-4980-868d-5d700e98b179
+		summarizeBy: none
+		sourceColumn: AIFrustration
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIExplain
+		dataType: string
+		lineageTag: 492fe435-18d2-47d2-9fa8-7c8decb0c940
+		summarizeBy: none
+		sourceColumn: AIExplain
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIAgents
+		dataType: string
+		lineageTag: 67836360-0c02-4401-bf6c-dc1356bba618
+		summarizeBy: none
+		sourceColumn: AIAgents
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIAgentChange
+		dataType: string
+		lineageTag: be532a6e-1763-4ac0-946b-ec8d18865df1
+		summarizeBy: none
+		sourceColumn: AIAgentChange
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIAgent_Uses
+		dataType: string
+		lineageTag: 266236f8-ce6a-4814-a603-087d14532857
+		summarizeBy: none
+		sourceColumn: AIAgent_Uses
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIHuman
+		dataType: string
+		lineageTag: 265ad635-8fbe-46d7-be3f-d0cd4064ab48
+		summarizeBy: none
+		sourceColumn: AIHuman
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIOpen
+		dataType: string
+		lineageTag: d22948e6-fddd-4411-9cf2-d670c6e60e6d
+		summarizeBy: none
+		sourceColumn: AIOpen
+
+		annotation SummarizationSetBy = Automatic
+
+	column ConvertedCompYearly
+		dataType: int64
+		formatString: 0
+		lineageTag: 783a6eca-4592-4067-af95-990e8e4808b2
+		summarizeBy: sum
+		sourceColumn: ConvertedCompYearly
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobSat
+		dataType: string
+		lineageTag: bef8f0a3-9256-47e2-a199-b1c8d283c733
+		summarizeBy: none
+		sourceColumn: JobSat
+
+		annotation SummarizationSetBy = Automatic
+
+	column ExperienceRange = SWITCH(TRUE(), ISBLANK(survey_2025_results[YearsCode]), "Unknown", survey_2025_results[YearsCode] <= 2, "0-2 Junior", survey_2025_results[YearsCode] <= 5, "3-5 Mid", survey_2025_results[YearsCode] <= 10, "6-10 Senior", survey_2025_results[YearsCode] <= 20, "11-20 Staff", "20+ Principal")
+		dataType: string
+		lineageTag: d38c0ed9-22ec-4521-a9e7-b851c2d53636
+
+	column Region = SWITCH(TRUE(), survey_2025_results[Country] IN {"United States of America", "Canada"}, "North America", survey_2025_results[Country] IN {"Mexico", "Brazil", "Argentina", "Colombia", "Chile", "Peru", "Uruguay", "Venezuela, Bolivarian Republic of...", "Costa Rica", "Ecuador", "Bolivia, Plurinational State of...", "Guatemala", "Paraguay", "Dominican Republic", "Panama", "Honduras", "El Salvador", "Nicaragua", "Cuba"}, "Latin America", survey_2025_results[Country] IN {"United Kingdom of Great Britain and Northern Ireland", "Germany", "France", "Netherlands", "Poland", "Spain", "Italy", "Sweden", "Switzerland", "Austria", "Belgium", "Czech Republic", "Denmark", "Finland", "Norway", "Portugal", "Romania", "Ireland", "Ukraine", "Hungary", "Greece", "Bulgaria", "Croatia", "Serbia", "Slovakia", "Lithuania", "Slovenia", "Estonia", "Latvia", "Bosnia and Herzegovina", "North Macedonia", "Moldova, Republic of...", "Albania", "Malta", "Montenegro", "Luxembourg", "Iceland", "Cyprus", "Liechtenstein"}, "Europe", survey_2025_results[Country] IN {"India", "China", "Japan", "South Korea", "Indonesia", "Philippines", "Vietnam", "Thailand", "Malaysia", "Singapore", "Bangladesh", "Pakistan", "Sri Lanka", "Nepal", "Myanmar", "Cambodia", "Taiwan", "Hong Kong (S.A.R.)", "Mongolia"}, "Asia", survey_2025_results[Country] IN {"Australia", "New Zealand"}, "Oceania", survey_2025_results[Country] IN {"Nigeria", "South Africa", "Kenya", "Egypt", "Ethiopia", "Ghana", "Morocco", "Tanzania, United Republic of...", "Uganda", "Algeria", "Tunisia", "Cameroon", "Rwanda", "Zimbabwe", "Senegal", "Mozambique", "Madagascar"}, "Africa", survey_2025_results[Country] IN {"Israel", "Turkey", "Iran, Islamic Republic of...", "Saudi Arabia", "United Arab Emirates", "Iraq", "Jordan", "Lebanon", "Qatar", "Kuwait", "Bahrain", "Oman", "Yemen", "Syrian Arab Republic", "Palestine"}, "Middle East", ISBLANK(survey_2025_results[Country]), "Unknown", "Other")
+		dataType: string
+		lineageTag: 993beaf4-6f44-4577-be81-6d737dc671a1
+
+	partition survey_2025_results = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\danie\Downloads\survey_2025_results.csv"),[Delimiter=",", Columns=172, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([MainBranch] = "I am a developer by profession")),
+				    #"NAs removidos" = Table.ReplaceValue(#"Filas filtradas", "NA", null, Replacer.ReplaceValue, Table.ColumnNames(#"Filas filtradas")),
+				    #"Columnas seleccionadas" = Table.SelectColumns(#"NAs removidos",{
+				        "ResponseId", "MainBranch", "Age", "EdLevel", "Employment", "WorkExp",
+				        "YearsCode", "DevType", "OrgSize", "ICorPM", "RemoteWork",
+				        "Industry", "Country", "Currency", "CompTotal",
+				        "LanguageHaveWorkedWith", "LanguageWantToWorkWith",
+				        "DatabaseHaveWorkedWith", "DatabaseWantToWorkWith",
+				        "PlatformHaveWorkedWith", "PlatformWantToWorkWith",
+				        "WebframeHaveWorkedWith", "WebframeWantToWorkWith",
+				        "DevEnvsHaveWorkedWith", "DevEnvsWantToWorkWith",
+				        "OpSysPersonal use", "OpSysProfessional use",
+				        "AIModelsHaveWorkedWith", "AIModelsWantToWorkWith",
+				        "AISelect", "AISent", "AIAcc", "AIComplex",
+				        "AIToolCurrently partially AI",
+				        "AIToolDon't plan to use AI for this task",
+				        "AIToolPlan to partially use AI",
+				        "AIToolPlan to mostly use AI",
+				        "AIToolCurrently mostly AI",
+				        "AIFrustration", "AIExplain",
+				        "AIAgents", "AIAgentChange", "AIAgent_Uses",
+				        "AIHuman", "AIOpen",
+				        "ConvertedCompYearly", "JobSat"
+				    }),
+				    #"Tipos cambiados" = Table.TransformColumnTypes(#"Columnas seleccionadas",{
+				        {"ResponseId", Int64.Type},
+				        {"ConvertedCompYearly", Int64.Type},
+				        {"YearsCode", Int64.Type},
+				        {"WorkExp", Int64.Type}
+				    })
+				in
+				    #"Tipos cambiados"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+
