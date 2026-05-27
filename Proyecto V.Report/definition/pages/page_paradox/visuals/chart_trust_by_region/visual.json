@@ -71,6 +71,53 @@
         }
       ]
     },
+    "visualContainerObjects": {
+      "visualTooltip": [
+        {
+          "properties": {
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'76d9c188688856e3d3e9'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bf811f070f62f2b12034",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "05b52f670536558507d3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "% Trust AI"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

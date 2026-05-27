@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "kpi_ratio_tt",
+  "position": {
+    "x": 165,
+    "y": 50,
+    "z": 1,
+    "height": 80,
+    "width": 145,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "survey_2025_results"
+                    }
+                  },
+                  "Property": "Adoption to Trust Ratio"
+                }
+              },
+              "queryRef": "survey_2025_results.Adoption to Trust Ratio",
+              "displayName": "Ratio Adopción/Confianza"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "22D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -113,5 +113,52 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "23004454bf192a56a35b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_AIModels"
+              }
+            },
+            "Property": "AIModel"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "6b957ffc5a6799b3e371",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "Total Respondents"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

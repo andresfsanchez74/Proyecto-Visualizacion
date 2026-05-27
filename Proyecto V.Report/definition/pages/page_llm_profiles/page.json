@@ -5,6 +5,117 @@
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "7b3ebfd73ece82d50290",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "AIAcc"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "13584f7672b79ec0de87",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "survey_2025_results",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Region"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'North America'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "d22f05e8bc467739350c",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "c6b0739192a36fbab275",
+        "boundFilter": "7b3ebfd73ece82d50290",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "AIAcc"
+          }
+        }
+      },
+      {
+        "name": "dba4bd016c1272f1847c",
+        "boundFilter": "13584f7672b79ec0de87",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "Region"
+          }
+        }
+      }
+    ]
+  },
   "objects": {
     "background": [
       {
@@ -13,6 +124,19 @@
             "expr": {
               "Literal": {
                 "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "278L"
               }
             }
           }

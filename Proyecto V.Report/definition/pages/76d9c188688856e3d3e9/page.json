@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "76d9c188688856e3d3e9",
+  "displayName": "Tooltip_Paradox",
+  "displayOption": "FitToPage",
+  "height": 240,
+  "width": 320,
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}

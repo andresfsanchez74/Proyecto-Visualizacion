@@ -73,6 +73,61 @@ table survey_2025_results
 		formatString: #,##0
 		lineageTag: 4364f7bc-b6a5-407b-b6f8-9d78efcc13e9
 
+	measure 'Top AI Model' = VAR _top = TOPN(1, VALUES(dim_AIModels[AIModel]), CALCULATE(COUNTROWS(dim_AIModels)), DESC) RETURN IF(HASONEVALUE(dim_AIModels[AIModel]), SELECTEDVALUE(dim_AIModels[AIModel]), CONCATENATEX(_top, dim_AIModels[AIModel], ", "))
+		lineageTag: 8c0cd7e3-efb7-4afc-81fd-36c54cd78ffc
+
+	measure 'Top Language' = VAR _top = TOPN(1, VALUES(dim_Languages[Language]), CALCULATE(COUNTROWS(dim_Languages)), DESC) RETURN IF(HASONEVALUE(dim_Languages[Language]), SELECTEDVALUE(dim_Languages[Language]), CONCATENATEX(_top, dim_Languages[Language], ", "))
+		lineageTag: 07d18037-a639-4ce0-9d09-6b0205d9798d
+
+	measure 'Top IDE' = VAR _top = TOPN(1, VALUES(dim_IDEs[IDE]), CALCULATE(COUNTROWS(dim_IDEs)), DESC) RETURN IF(HASONEVALUE(dim_IDEs[IDE]), SELECTEDVALUE(dim_IDEs[IDE]), CONCATENATEX(_top, dim_IDEs[IDE], ", "))
+		lineageTag: 6d686333-dc7c-42fb-a91b-ce8f9fa8b41b
+
+	measure 'Avg Trust Score' = VAR _total = CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AIAcc])) VAR _high = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] = "Highly trust") VAR _some = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] = "Somewhat trust") VAR _neutral = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] = "Neither trust nor distrust") VAR _sdist = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] = "Somewhat distrust") VAR _hdist = CALCULATE(COUNTROWS(survey_2025_results), survey_2025_results[AIAcc] = "Highly distrust") RETURN DIVIDE(_high * 5 + _some * 4 + _neutral * 3 + _sdist * 2 + _hdist * 1, _total)
+		formatString: 0.00
+		lineageTag: 5a160721-b45b-4ac6-9920-2189a0cb1e3b
+
+	measure 'AI Models Count' = COUNTROWS(dim_AIModels)
+		formatString: #,##0
+		lineageTag: d534a0e7-139a-4e75-8bf7-a8cd23996376
+
+	measure 'Respondents in Context' = COUNTROWS(survey_2025_results)
+		formatString: #,##0
+		lineageTag: 76f62967-c3ca-4b2e-b82f-79b4554e0262
+
+	measure 'Respondents AI (No Blank)' = CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AISelect]))
+		formatString: #,##0
+		lineageTag: b0c59f72-35ad-4cf5-af78-4c4d51a36108
+
+	measure 'Respondents Sentiment (No Blank)' = CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AISent]))
+		formatString: #,##0
+		lineageTag: 349d28f5-952e-4af2-8343-0562e0299c61
+
+	measure 'Respondents Trust (No Blank)' = CALCULATE(COUNTROWS(survey_2025_results), NOT ISBLANK(survey_2025_results[AIAcc]))
+		formatString: #,##0
+		lineageTag: d9c8b604-bc65-4efb-96e4-09f4197f366a
+
+	measure 'Tooltip Adoption Summary' =
+			VAR _total = [Total Respondents]
+			VAR _adopt = [% AI Adoption]
+			VAR _daily = [% Daily AI Use]
+			VAR _trust = [% Trust AI]
+			RETURN
+			"Respondents: " & FORMAT(_total, "#,0") & " | Adopción: " & FORMAT(_adopt, "0.0%") & " | Uso Diario: " & FORMAT(_daily, "0.0%") & " | Confianza: " & FORMAT(_trust, "0.0%")
+		displayFolder: Tooltips
+		lineageTag: 0d3b3def-51b4-4157-878d-5771f42ca463
+
+	/// Brecha entre adopción y confianza. Valor alto = paradoja mayor.
+	measure 'Trust Gap' = [% AI Adoption] - [% Trust AI]
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: KPIs
+		lineageTag: d57f1a21-82d6-4804-963d-b042baaae8f4
+
+	/// Ratio adopción/confianza. >1 indica uso sin confianza plena.
+	measure 'Adoption to Trust Ratio' = DIVIDE([% AI Adoption], [% Trust AI], 0)
+		formatString: 0.00
+		displayFolder: KPIs
+		lineageTag: b4fe083b-6457-49be-9a8c-43b773d834d1
+
 	column ResponseId
 		dataType: int64
 		formatString: 0

@@ -1,0 +1,691 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset - Vista Global",
+  "name": "b1d1f11bc8092662ab16",
+  "options": {
+    "targetVisualNames": [
+      "slicer_region_p2",
+      "slicer_experience_p2"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "page_paradox",
+    "sections": {
+      "page_paradox": {
+        "visualContainers": {
+          "chart_sentiment_by_experience": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ee5a7374b665e572a4ad",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "ExperienceRange"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f609f883f51b915bfe18",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "survey_2025_results",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "AISent"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "AISent"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8354fdc480f05f5d8187",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Total Respondents"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "ExperienceRange"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "chart_trust_by_region": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2342c906f4a2269aebc5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "85c7a4e50a9c14c67420",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "% Trust AI"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  }
+                ]
+              }
+            },
+            "highlight": {
+              "selection": [
+                {
+                  "dataMap": {
+                    "survey_2025_results.Region": [
+                      {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "survey_2025_results"
+                                  }
+                                },
+                                "Property": "Region"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'Latin America'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "metadata": [
+                    "survey_2025_results.% Trust AI"
+                  ]
+                }
+              ],
+              "filterExpressionMetadata": {
+                "expressions": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  }
+                ],
+                "cachedValueItems": [
+                  {
+                    "identities": [
+                      {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "survey_2025_results"
+                                  }
+                                },
+                                "Property": "Region"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'Latin America'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "valueMap": {
+                      "0": "Latin America"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "chart_trust_distribution": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "75aaee192ce11318e513",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "survey_2025_results",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "AIAcc"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "AIAcc"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "992c14eb89294dd83227",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Total Respondents"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "AIAcc"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "header_shape_p2": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "kpi_adoption_p2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "30d12a485e2ec37484fc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "% AI Adoption"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "kpi_distrust_p2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d877d07f3a0951e3aa84",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "% Distrust AI"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "kpi_favorable_p2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3bab621a6ff16345d9a2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "% Favorable Sentiment"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "kpi_trust_p2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "55b7f86f9efcc6c1d6c6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "% Trust AI"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "slicer_experience_p2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c12ea11c8dda7df02413",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "ExperienceRange"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "s",
+                                "Entity": "survey_2025_results",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "ExperienceRange"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'6-10 Senior'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "ExperienceRange"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "slicer_region_p2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c0dbc7106ced604e5e13",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "s",
+                                "Entity": "survey_2025_results",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "Region"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'Other'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

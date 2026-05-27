@@ -57,8 +57,31 @@
         {
           "properties": {}
         }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5366c992f1d1d5687a6c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "ExperienceRange"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

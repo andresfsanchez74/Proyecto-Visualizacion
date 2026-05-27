@@ -31,7 +31,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "El 80.8% de los desarrolladores profesionales usa herramientas de IA, pero solo el 32.4% confía en ellas. El 45.9% reporta algún nivel de desconfianza. Esto sugiere que la adopción está impulsada por presión competitiva, no por convicción.",
+                    "value": "QUÉ: El 80.8% de los 37,467 desarrolladores profesionales usa herramientas de IA, pero solo el 32.4% confía en ellas (score promedio: 2.70/5.0). El 45.9% reporta desconfianza activa.\nIMPLICACIÓN: La adopción está impulsada por presión competitiva, no por convicción. Riesgo de shadow AI y baja calidad de outputs sin gobernanza.\nACCIÓN: Implementar programa de capacitación en uso efectivo de IA para cerrar brecha de confianza.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12px",
@@ -65,7 +65,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "ChatGPT lidera con 10,882 usuarios entre profesionales, seguido por Claude (5,970) y Gemini (5,461). DeepSeek emerge como contendiente con 3,327 usuarios. La diversificación del mercado LLM abre oportunidades de negociación de licencias.",
+                    "value": "QUÉ: OpenAI GPT lidera con 10,882 usuarios, seguido por Claude Sonnet (5,970), Gemini Flash (4,568) y OpenAI Reasoning (4,533). DeepSeek emerge con 4,655 usuarios combinados.\nIMPLICACIÓN: Mercado LLM diversificándose rápidamente. No depender de un solo proveedor.\nACCIÓN: Estandarizar ChatGPT como herramienta principal + Claude o Gemini como alternativa. Evaluar DeepSeek para casos sensibles (modelos locales).",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12px",
@@ -99,7 +99,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "El 50.6% usa herramientas IA diariamente. Esto indica que la IA ya no es experimental sino parte del flujo de trabajo estándar. Las empresas que no estandaricen herramientas IA arriesgan productividad.",
+                    "value": "QUÉ: El 50.6% usa IA diariamente, VS Code domina IDEs (15,989 usuarios), JavaScript lidera lenguajes (17,046).\nIMPLICACIÓN: IA ya es parte del flujo estándar. El ecosistema dev se consolida alrededor de VS Code + JS/TS + IA integrada.\nACCIÓN: Priorizar extensiones IA para VS Code. Empresas sin herramientas IA estandarizadas arriesgan productividad y retención de talento.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12px",
