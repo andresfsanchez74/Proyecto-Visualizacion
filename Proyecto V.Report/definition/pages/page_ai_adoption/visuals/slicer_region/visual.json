@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "slicer_region",
   "position": {
     "x": 850,
     "y": 65,
     "z": 4,
-    "width": 200,
     "height": 160,
+    "width": 200,
     "tabOrder": 10
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.Region",
+              "active": true,
               "displayName": "Región"
             }
           ]
@@ -51,16 +52,7 @@
         {
           "properties": {
             "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
-                }
-              }
+              "solid": {}
             }
           }
         }
@@ -69,16 +61,7 @@
         {
           "properties": {
             "fontColor": {
-              "solid": {
-                "color": "#475569"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
+              "solid": {}
             }
           }
         }

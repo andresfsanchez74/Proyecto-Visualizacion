@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "chart_models_by_experience",
   "position": {
     "x": 20,
     "y": 165,
     "z": 3,
-    "width": 810,
     "height": 260,
+    "width": 810,
     "tabOrder": 4
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.AIModelsHaveWorkedWith",
+              "active": true,
               "displayName": "Modelo LLM"
             }
           ]
@@ -68,31 +69,6 @@
       }
     },
     "objects": {
-      "title": [
-        {
-          "properties": {
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Modelos LLM preferidos por nivel de experiencia'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "legend": [
         {
           "properties": {

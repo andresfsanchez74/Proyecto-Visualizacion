@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "chart_ai_frequency_donut",
   "position": {
     "x": 20,
     "y": 520,
     "z": 3,
-    "width": 400,
     "height": 190,
+    "width": 400,
     "tabOrder": 8
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.AISelect",
+              "active": true,
               "displayName": "Frecuencia de uso IA"
             }
           ]
@@ -51,31 +52,6 @@
       }
     },
     "objects": {
-      "title": [
-        {
-          "properties": {
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Frecuencia de uso de herramientas IA'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "legend": [
         {
           "properties": {

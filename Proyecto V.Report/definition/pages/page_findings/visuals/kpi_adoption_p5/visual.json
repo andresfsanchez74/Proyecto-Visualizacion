@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "kpi_adoption_p5",
   "position": {
     "x": 20,
     "y": 65,
     "z": 2,
-    "width": 155,
     "height": 80,
+    "width": 155,
     "tabOrder": 2
   },
   "visual": {
@@ -38,9 +38,7 @@
         {
           "properties": {
             "color": {
-              "solid": {
-                "color": "#3B82F6"
-              }
+              "solid": {}
             },
             "fontSize": {
               "expr": {

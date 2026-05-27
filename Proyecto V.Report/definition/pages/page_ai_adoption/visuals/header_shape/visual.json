@@ -1,50 +1,22 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "header_shape",
   "position": {
     "x": 0,
     "y": 0,
     "z": 0,
-    "width": 1280,
     "height": 55,
+    "width": 1280,
     "tabOrder": 0
   },
   "visual": {
     "visualType": "shape",
     "objects": {
-      "general": [
-        {
-          "properties": {
-            "keepLayerOrder": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "line": [
-        {
-          "properties": {
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "100D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "fill": [
         {
           "properties": {
             "fillColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
+              "solid": {}
             },
             "transparency": {
               "expr": {

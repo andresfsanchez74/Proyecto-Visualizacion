@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "chart_ai_models_bar",
   "position": {
     "x": 20,
     "y": 170,
     "z": 3,
-    "width": 810,
     "height": 340,
+    "width": 810,
     "tabOrder": 7
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.AIModelsHaveWorkedWith",
+              "active": true,
               "displayName": "Modelo IA"
             }
           ]
@@ -89,34 +90,7 @@
         {
           "properties": {
             "fill": {
-              "solid": {
-                "color": "#3B82F6"
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Modelos de IA más utilizados por desarrolladores'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
+              "solid": {}
             }
           }
         }

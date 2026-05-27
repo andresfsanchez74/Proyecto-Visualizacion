@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "kpi_ai_users_p4",
   "position": {
     "x": 225,
     "y": 65,
     "z": 2,
-    "width": 195,
     "height": 90,
+    "width": 195,
     "tabOrder": 3
   },
   "visual": {
@@ -38,9 +38,7 @@
         {
           "properties": {
             "color": {
-              "solid": {
-                "color": "#3B82F6"
-              }
+              "solid": {}
             },
             "fontSize": {
               "expr": {
@@ -56,9 +54,7 @@
         {
           "properties": {
             "color": {
-              "solid": {
-                "color": "#94A3B8"
-              }
+              "solid": {}
             }
           }
         }

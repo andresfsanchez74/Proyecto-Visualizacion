@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "slicer_exp_p5",
   "position": {
     "x": 860,
     "y": 305,
     "z": 4,
-    "width": 190,
     "height": 140,
+    "width": 190,
     "tabOrder": 9
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.ExperienceRange",
+              "active": true,
               "displayName": "Experiencia"
             }
           ]
@@ -51,9 +52,7 @@
         {
           "properties": {
             "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
+              "solid": {}
             }
           }
         }

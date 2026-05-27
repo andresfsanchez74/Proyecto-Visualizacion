@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "chart_platforms_bar",
   "position": {
     "x": 430,
     "y": 435,
     "z": 3,
-    "width": 400,
     "height": 275,
+    "width": 400,
     "tabOrder": 7
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.PlatformHaveWorkedWith",
+              "active": true,
               "displayName": "Plataforma"
             }
           ]
@@ -51,38 +52,11 @@
       }
     },
     "objects": {
-      "title": [
-        {
-          "properties": {
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Plataformas cloud y herramientas'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "dataPoint": [
         {
           "properties": {
             "fill": {
-              "solid": {
-                "color": "#3B82F6"
-              }
+              "solid": {}
             }
           }
         }

@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "slicer_country",
   "position": {
     "x": 850,
     "y": 575,
     "z": 4,
-    "width": 200,
     "height": 135,
+    "width": 200,
     "tabOrder": 13
   },
   "visual": {
@@ -27,6 +27,7 @@
                 }
               },
               "queryRef": "survey_2025_results.Country",
+              "active": true,
               "displayName": "País"
             }
           ]
@@ -51,16 +52,7 @@
         {
           "properties": {
             "fontColor": {
-              "solid": {
-                "color": "#1E293B"
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
-                }
-              }
+              "solid": {}
             }
           }
         }

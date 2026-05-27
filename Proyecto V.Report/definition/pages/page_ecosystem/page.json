@@ -10,9 +10,7 @@
       {
         "properties": {
           "color": {
-            "solid": {
-              "color": "#F8FAFC"
-            }
+            "solid": {}
           },
           "transparency": {
             "expr": {
