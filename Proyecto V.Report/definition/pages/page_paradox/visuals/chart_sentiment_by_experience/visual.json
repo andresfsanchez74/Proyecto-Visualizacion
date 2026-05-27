@@ -1,0 +1,126 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "name": "chart_sentiment_by_experience",
+  "position": {
+    "x": 20,
+    "y": 435,
+    "z": 3,
+    "width": 400,
+    "height": 275,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "survey_2025_results"
+                    }
+                  },
+                  "Property": "ExperienceRange"
+                }
+              },
+              "queryRef": "survey_2025_results.ExperienceRange",
+              "displayName": "Experiencia"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "survey_2025_results"
+                    }
+                  },
+                  "Property": "AISent"
+                }
+              },
+              "queryRef": "survey_2025_results.AISent"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "survey_2025_results"
+                    }
+                  },
+                  "Property": "Total Respondents"
+                }
+              },
+              "queryRef": "survey_2025_results.Total Respondents"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "title": [
+        {
+          "properties": {
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sentimiento IA por nivel de experiencia'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#1E293B"
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bottom'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

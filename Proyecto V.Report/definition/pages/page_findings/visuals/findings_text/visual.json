@@ -1,0 +1,152 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visual/2.5.0/schema.json",
+  "name": "findings_text",
+  "position": {
+    "x": 20,
+    "y": 155,
+    "z": 3,
+    "width": 820,
+    "height": 550,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Hallazgo 1: La Paradoja de la Adopción",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "16px",
+                      "color": "#1E293B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El 80.8% de los desarrolladores profesionales usa herramientas de IA, pero solo el 32.4% confía en ellas. El 45.9% reporta algún nivel de desconfianza. Esto sugiere que la adopción está impulsada por presión competitiva, no por convicción.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#475569"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontSize": "8px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hallazgo 2: ChatGPT domina pero Claude crece",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "16px",
+                      "color": "#1E293B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "ChatGPT lidera con 10,882 usuarios entre profesionales, seguido por Claude (5,970) y Gemini (5,461). DeepSeek emerge como contendiente con 3,327 usuarios. La diversificación del mercado LLM abre oportunidades de negociación de licencias.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#475569"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontSize": "8px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hallazgo 3: El uso diario ya es norma",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "16px",
+                      "color": "#1E293B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El 50.6% usa herramientas IA diariamente. Esto indica que la IA ya no es experimental sino parte del flujo de trabajo estándar. Las empresas que no estandaricen herramientas IA arriesgan productividad.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#475569"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontSize": "8px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Recomendación para el VP de Ingeniería",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "16px",
+                      "color": "#3B82F6"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "1. Estandarizar ChatGPT + un modelo alternativo (Claude o Gemini) para diversificar riesgo.\n2. Invertir en capacitación sobre uso efectivo de IA para cerrar la brecha de confianza.\n3. Monitorear satisfacción del equipo con herramientas IA trimestralmente.\n4. Evaluar DeepSeek y modelos open-source para casos de uso internos sensibles.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#475569"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
