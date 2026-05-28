@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
-  "displayName": "Marcador 2",
-  "name": "5d3427d87e10ff0dde67",
+  "displayName": "Latin America View",
+  "name": "338e7b79057cc3b27b67",
   "options": {
     "targetVisualNames": [
-      "slicer_experience_p2"
+      "slicer_region_p2"
     ]
   },
   "explorationState": {
@@ -16,21 +16,6 @@
           "chart_sentiment_by_experience": {
             "filters": {
               "byExpr": [
-                {
-                  "name": "ee5a7374b665e572a4ad",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "survey_2025_results"
-                        }
-                      },
-                      "Property": "ExperienceRange"
-                    }
-                  },
-                  "howCreated": 0
-                },
                 {
                   "name": "f609f883f51b915bfe18",
                   "type": "Categorical",
@@ -90,7 +75,22 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "8354fdc480f05f5d8187",
+                  "name": "dc7f2f7e7a5a28e9d736",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "survey_2025_results"
+                        }
+                      },
+                      "Property": "ExperienceRange"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d5d0d6141313edc155db",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -129,7 +129,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "183defc4273e5e262a31",
+                  "name": "17fd41b23d878c5182f2",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -144,7 +144,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "79e069e9988a357111bf",
+                  "name": "4358d99c996dfec7d2c9",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -321,7 +321,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "992c14eb89294dd83227",
+                  "name": "7b8dbaa80d3aa2f0da7e",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -366,7 +366,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "2879e859337989a78cc9",
+                  "name": "0d41b53d744255284de7",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -391,7 +391,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "7a9350d3110da6510365",
+                  "name": "93c72b560efb5993c9bc",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -416,7 +416,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "35bba8ef58e08ac93d2d",
+                  "name": "d7cfdc05cc8fa43f06fe",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -441,7 +441,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "aafcef266de50ecc20cd",
+                  "name": "24cd06bed861e7bd660b",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -466,7 +466,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "950035c90bc20c7ebedd",
+                  "name": "70d1d302a8576b41e7be",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -486,53 +486,6 @@
               "visualType": "slicer",
               "objects": {
                 "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "s",
-                                "Entity": "survey_2025_results",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "s"
-                                            }
-                                          },
-                                          "Property": "ExperienceRange"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'6-10 Senior'"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
                   "data": [
                     {
                       "properties": {
@@ -568,7 +521,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "29b770cc4c936b5467f8",
+                  "name": "f6620238ef96cd13b5e3",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -621,7 +574,7 @@
                                       [
                                         {
                                           "Literal": {
-                                            "Value": "'Other'"
+                                            "Value": "'Latin America'"
                                           }
                                         }
                                       ]
@@ -664,6 +617,12 @@
                   }
                 ]
               }
+            }
+          },
+          "97abaaa21c9c7763120b": {
+            "singleVisual": {
+              "visualType": "pageNavigator",
+              "objects": {}
             }
           }
         }

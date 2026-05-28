@@ -4,10 +4,10 @@
   "position": {
     "x": 20,
     "y": 435,
-    "z": 3,
+    "z": 5000,
     "height": 275,
     "width": 400,
-    "tabOrder": 7
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -117,20 +117,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "ee5a7374b665e572a4ad",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "survey_2025_results"
-              }
-            },
-            "Property": "ExperienceRange"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "f609f883f51b915bfe18",
         "field": {
           "Column": {
@@ -201,20 +187,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "8354fdc480f05f5d8187",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "survey_2025_results"
-              }
-            },
-            "Property": "Total Respondents"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

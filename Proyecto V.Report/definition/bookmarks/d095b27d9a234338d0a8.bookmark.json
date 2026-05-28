@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
-  "displayName": "Reset - Vista Global",
-  "name": "b1d1f11bc8092662ab16",
+  "displayName": "Senior Engineers View",
+  "name": "d095b27d9a234338d0a8",
   "options": {
     "targetVisualNames": [
-      "slicer_region_p2"
+      "slicer_experience_p2"
     ]
   },
   "explorationState": {
@@ -75,7 +75,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "4dacdebeafb056f70cfe",
+                  "name": "5818a17d65375a653098",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -90,7 +90,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "faa4d9ae7b595b9b420c",
+                  "name": "521693bd88139d838e9d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -129,7 +129,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "aa114c9a0ebf3eb5d18f",
+                  "name": "494dd49eea7725baee78",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -144,7 +144,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "96935a88b311f809dbde",
+                  "name": "546d9481a08ad20a2ce6",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -321,7 +321,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "7d1de1080a3eb9d01ef2",
+                  "name": "3986d8388b0f90901ccf",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -366,7 +366,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "0d887182922f5bc9ad41",
+                  "name": "2499ca1a16ddf9412217",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -391,7 +391,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "4dcc1f699bec72117e6c",
+                  "name": "78b7b7732138f57bd1b9",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -416,7 +416,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "b5ba1d8049eef1e6c5f2",
+                  "name": "dd1f1ecbe2e6df5eb5fc",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -441,7 +441,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "d35be55cc48fcbb076ef",
+                  "name": "659adc21941e9d79ca54",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -486,6 +486,53 @@
               "visualType": "slicer",
               "objects": {
                 "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "s",
+                                "Entity": "survey_2025_results",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "ExperienceRange"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'6-10 Senior'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
                   "data": [
                     {
                       "properties": {

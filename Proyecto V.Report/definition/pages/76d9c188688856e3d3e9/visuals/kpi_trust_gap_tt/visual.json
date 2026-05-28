@@ -4,10 +4,10 @@
   "position": {
     "x": 10,
     "y": 50,
-    "z": 1,
+    "z": 1000,
     "height": 80,
     "width": 140,
-    "tabOrder": 1
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "card",
@@ -54,5 +54,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "7a189fb99da4a029180b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "survey_2025_results"
+              }
+            },
+            "Property": "Trust Gap"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

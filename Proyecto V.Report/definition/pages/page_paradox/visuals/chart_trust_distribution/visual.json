@@ -4,10 +4,10 @@
   "position": {
     "x": 20,
     "y": 165,
-    "z": 3,
+    "z": 7000,
     "height": 260,
     "width": 810,
-    "tabOrder": 6
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "barChart",
@@ -156,20 +156,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "992c14eb89294dd83227",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "survey_2025_results"
-              }
-            },
-            "Property": "Total Respondents"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

@@ -4,10 +4,10 @@
   "position": {
     "x": 350,
     "y": 65,
-    "z": 2,
+    "z": 2000,
     "height": 80,
     "width": 155,
-    "tabOrder": 4
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "card",
@@ -41,6 +41,17 @@
               "expr": {
                 "Literal": {
                   "Value": "22D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#10B981'"
+                    }
+                  }
                 }
               }
             }

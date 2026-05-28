@@ -4,10 +4,10 @@
   "position": {
     "x": 20,
     "y": 165,
-    "z": 3,
+    "z": 5000,
     "height": 260,
     "width": 500,
-    "tabOrder": 4
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "treemap",
